@@ -9,7 +9,7 @@ doing computations in Coxeter groups.  Among its features:
 - shortlex normal forms
 - Bruhat order
 - Kazhdan-Lusztig polynomials
-- Kazhdan--Lusztig cells for finite Coxeter groups
+- Kazhdan-Lusztig cells for finite Coxeter groups
 - rational singular loci of Schubert varieties
 - ordinary and IH Betti numbers of Schubert varieties
 
