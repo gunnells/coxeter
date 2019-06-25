@@ -21,7 +21,8 @@ released in beta by him (his original author information is reproduced
 below).  Unfortunately he passed away in 2006 and was unable to take
 the project further.  Nevertheless his program is fantastic and is in
 my opinion the best tool available for demanding computations in
-arbitrary Coxeter groups.
+arbitrary Coxeter groups.  I hope that others will contribute to the code to 
+give it new life.
 
 ## Building the program
 
