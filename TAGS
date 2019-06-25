@@ -1,0 +1,3150 @@
+
+error.cpp,1431
+namespace error 22,361
+namespace error 34,626
+  bool CATCH_MEMORY_OVERFLOW error::CATCH_MEMORY_OVERFLOW35,644
+  int ERRNO error::ERRNO36,682
+void error::Error(99,2789
+void abortError(::abortError347,8785
+void badCoxEntry(359,8954
+void badInput(372,9214
+void badLength(381,9359
+void badLine(397,9731
+void badRCycField(419,10356
+void checkminFail(426,10463
+void commandNotFound(438,10691
+void commandRedefinition(451,10911
+void contextNbrOverflow(465,11192
+void coxAllocFail(478,11463
+void coxNbrOverflow(492,11720
+void denseArrayOverflow(506,11985
+void extensionFail(519,12254
+void fileNotFound(533,12546
+void klCoeffNegative(546,12783
+void klCoeffOverflow(570,13603
+void klFail(595,14467
+void leadingWhitespace(612,14922
+void lengthOverflow(632,15548
+void memoryWarning(643,15653
+void minRootOverflow(659,16072
+void modeChangeFail(671,16288
+void muFail(683,16487
+void muNegative(699,16859
+void muOverflow(717,17341
+void notAffine(733,17740
+void notCoxelt(746,17951
+void notDescent(759,18151
+void notFinite(776,18568
+void notGenerator(789,18778
+void notPermutation(802,18986
+void notSymmetric(815,19236
+void outOfMemory(833,19768
+void parNbrOverflow(855,20130
+void parseError(867,20317
+void reservedSymbol(882,20669
+void repeatedSymbol(902,21281
+void ueMuFail(919,21767
+void undefCoxarr(940,22392
+void wrongCoxeterEntry(951,22553
+void wrongRank(965,22871
+void wrongType(1035,24780
+
+interactive.cpp,1614
+namespace interactive 23,391
+  const Letter generator_type ::generator_type48,1179
+namespace interactive 85,2600
+OutputFile::OutputFile(interactive::OutputFile::OutputFile87,2625
+OutputFile::~OutputFile(102,2866
+namespace interactive 135,3976
+CoxGroup* allocCoxGroup(interactive::allocCoxGroup137,4001
+CoxGroup* allocCoxGroup(154,4210
+CoxGroup* coxeterGroup(171,4446
+CoxEntry getCoxEntry(219,5966
+void getCoxFileName(::getCoxFileName252,6618
+namespace interactive 298,7649
+const CoxWord& getCoxWord(interactive::getCoxWord300,7674
+Generator getGenerator(333,8238
+Generator getGenerator(369,8937
+void getLength(401,9443
+Rank getRank(462,10859
+const Type& getType(507,11721
+CoxEntry readCoxEntry(540,12363
+void interactive::changeOrdering(578,13081
+void checkCoxElement(::checkCoxElement646,14974
+void checkCoxEntry(671,15411
+void checkFilename(691,15743
+void checkLength(713,16048
+void checkRank(730,16328
+void checkType(818,18073
+namespace interactive 887,19822
+void printInterface(interactive::printInterface889,19847
+void printInterface(913,20346
+void printMatrix(939,20925
+void printOrdering(959,21256
+void printRepresentation(979,21628
+void printADiagram(::printADiagram1041,23247
+void printBDiagram(1068,23770
+void printDDiagram(1097,24349
+void printEDiagram(1142,25355
+void printFDiagram(1172,25982
+void printGDiagram(1189,26296
+void printHDiagram(1205,26599
+void printIDiagram(1223,26956
+int interactive::endOfLine(1265,27893
+Ulong parse(::parse1295,28469
+Ulong parse(1349,29460
+namespace interactive 1413,30640
+bool yesNo(interactive::yesNo1415,30665
+
+affine.cpp,1099
+namespace affine 16,238
+namespace affine 58,1915
+AffineCoxGroup::AffineCoxGroup(affine::AffineCoxGroup::AffineCoxGroup60,1935
+AffineCoxGroup::~AffineCoxGroup(affine::AffineCoxGroup::~AffineCoxGroup64,2015
+AffineBigRankCoxGroup::AffineBigRankCoxGroup(affine::AffineBigRankCoxGroup::AffineBigRankCoxGroup73,2149
+AffineBigRankCoxGroup::~AffineBigRankCoxGroup(affine::AffineBigRankCoxGroup::~AffineBigRankCoxGroup78,2252
+GeneralABRCoxGroup::GeneralABRCoxGroup(affine::GeneralABRCoxGroup::GeneralABRCoxGroup87,2408
+GeneralABRCoxGroup::~GeneralABRCoxGroup(affine::GeneralABRCoxGroup::~GeneralABRCoxGroup92,2512
+AffineMedRankCoxGroup::AffineMedRankCoxGroup(affine::AffineMedRankCoxGroup::AffineMedRankCoxGroup96,2559
+AffineMedRankCoxGroup::~AffineMedRankCoxGroup(105,2742
+GeneralAMRCoxGroup::GeneralAMRCoxGroup(114,2940
+GeneralAMRCoxGroup::~GeneralAMRCoxGroup(119,3044
+AffineSmallRankCoxGroup::AffineSmallRankCoxGroup(128,3190
+AffineSmallRankCoxGroup::~AffineSmallRankCoxGroup(133,3304
+GeneralASRCoxGroup::GeneralASRCoxGroup(142,3466
+GeneralASRCoxGroup::~GeneralASRCoxGroup(147,3572
+
+stack.h,444
+#define STACK_H9,187
+template <class T> class Fifo 34,553
+  List<T> d_list;36,595
+  Ulong d_first;37,613
+  Ulong d_last;38,630
+  Ulong d_size;39,646
+  void operator delete(42,706
+  Fifo(44,785
+  ~Fifo(45,795
+  const T& pop(47,825
+  void push(48,843
+  Ulong size(50,882
+template <class T> class Stack 54,932
+  List<T> d_list;56,975
+  void operator delete(59,1037
+  const T* pop(64,1162
+  void push(65,1180
+  Ulong size(67,1219
+
+globals.h,56
+#define GLOBALS_H9,192
+  typedef unsigned long 18,331
+
+list.h,1124
+#define LIST_H9,178
+namespace list 26,498
+template <class T> class List 49,1045
+  T* d_ptr;51,1089
+  Ulong d_size;52,1101
+  Ulong d_allocated;53,1117
+  typedef T eltType;55,1147
+  void* operator new(57,1203
+  void operator delete(58,1267
+  void* operator new(60,1349
+  void operator delete(61,1403
+  List(62,1458
+  List(63,1527
+  List(64,1551
+  List(65,1577
+  template <class I> List(66,1613
+  template <class I, class F> List(67,1671
+  ~List(68,1744
+  T& operator[operator70,1771
+  void append(72,1895
+  const List<T>& assign(73,1922
+  void erase(74,1962
+  void reverse(75,1992
+  T* ptr(76,2010
+  void setData(77,2037
+  void setData(78,2092
+  void setSize(79,2172
+  void setSizeValue(80,2197
+  void setZero(81,2277
+  void setZero(82,2357
+  void setZero(83,2437
+  void shallowCopy(84,2517
+  void shiftPtr(85,2597
+  Ulong& size(86,2677
+  void sort(87,2757
+  template<class C> void sort(88,2772
+  const T& operator[operator90,2868
+  typedef T* Iterator;97,3245
+  typedef const T* ConstIterator;98,3268
+  Iterator begin(99,3302
+  Iterator end(100,3382
+  ConstIterator begin(101,3462
+
+coxgroup.cpp,2062
+namespace coxgroup 59,2151
+  class CoxGroup::CoxHelper coxgroup::CoxGroup::CoxHelper61,2173
+    CoxGroup* d_W;coxgroup::CoxGroup::CoxHelper::d_W63,2214
+    void* operator new(coxgroup::CoxGroup::CoxHelper::operator new65,2243
+    void operator delete(coxgroup::CoxGroup::CoxHelper::operator delete66,2309
+namespace coxgroup 76,2504
+CoxGroup::CoxGroup(coxgroup::CoxGroup::CoxGroup78,2526
+CoxGroup::~CoxGroup(108,3248
+void CoxGroup::coatoms(126,3542
+bool CoxGroup::isDescent(157,4096
+bool CoxGroup::isDihedral(171,4297
+void CoxGroup::modify(198,4694
+void CoxGroup::parse(220,5162
+bool CoxGroup::parseBeginGroup(297,7561
+bool CoxGroup::parseContextNumber(325,8082
+bool CoxGroup::parseEndGroup(361,8827
+bool CoxGroup::parseGroupElement(406,9576
+bool CoxGroup::parseModifier(461,10735
+int CoxGroup::prod(495,11385
+int CoxGroup::prod(513,11788
+int CoxGroup::prod(532,12113
+void CoxGroup::activateKL(553,12470
+void CoxGroup::activateIKL(572,12833
+void CoxGroup::activateUEKL(587,13041
+void CoxGroup::cBasis(610,13497
+CoxNbr CoxGroup::extendContext(624,13788
+void CoxGroup::fillIKL(677,14940
+void CoxGroup::fillIMu(692,15212
+void CoxGroup::fillKL(707,15487
+void CoxGroup::fillMu(721,15710
+void CoxGroup::fillUEKL(735,15932
+void CoxGroup::fillUEMu(750,16185
+const invkl::KLPol& CoxGroup::invklPol(765,16438
+void CoxGroup::invklRow(778,16665
+const kl::KLPol& CoxGroup::klPol(792,16968
+void CoxGroup::klRow(805,17186
+KLCoeff CoxGroup::mu(819,17469
+KLCoeff CoxGroup::mu0(832,17671
+void CoxGroup::permute(845,17875
+void CoxGroup::uneqcBasis(897,19641
+const uneqkl::KLPol& CoxGroup::uneqklPol(911,19950
+const uneqkl::MuPol& CoxGroup::uneqmu(924,20192
+void CoxGroup::uneqklRow(938,20462
+namespace coxgroup 968,21222
+CoxGroup::CoxHelper::CoxHelper(coxgroup::CoxGroup::CoxHelper::CoxHelper970,21244
+CoxGroup::CoxHelper::~CoxHelper(coxgroup::CoxGroup::CoxHelper::~CoxHelper974,21300
+void CoxGroup::CoxHelper::sortContext(coxgroup::CoxGroup::CoxHelper::sortContext978,21339
+void CoxGroup::CoxHelper::checkInverses(1013,22036
+
+minroots.cpp,2265
+  const Ulong dihedral ::dihedral13,199
+  const int first_dotval ::first_dotval14,240
+  const int first_negdotval ::first_negdotval15,275
+  const int dotval_size ::dotval_size16,314
+  const int dotval_negsize ::dotval_negsize17,344
+  class InitMinTable:::InitMinTable24,418
+    InitMinTable(::InitMinTable::InitMinTable27,469
+    void setMinMemory(::InitMinTable::setMinMemory41,1165
+    inline MinNbr size(::InitMinTable::size42,1242
+  DotVal *CS3;::CS347,1341
+  DotVal *CS4;::CS448,1356
+  DotVal *CS5;::CS549,1371
+  DotVal *CS6;::CS650,1386
+  DotVal *CSm;::CSm51,1401
+class InitStaticConstants ::InitStaticConstants195,9039
+InitStaticConstants::InitStaticConstants(::InitStaticConstants::InitStaticConstants201,9144
+InitMinTable::InitMinTable(::InitMinTable::InitMinTable576,29329
+void InitMinTable::initMinTable(587,29460
+MinNbr InitMinTable::dihedralShift(633,30305
+void InitMinTable::fillDihedralRoots(660,30663
+void InitMinTable::fillDepthOneRow(709,31504
+void InitMinTable::fillDihedralRow(751,32278
+void InitMinTable::fillReflectionRow(808,33271
+void InitMinTable::fillMinTable(861,34305
+void InitMinTable::newDepthOneRoot(881,34625
+void InitMinTable::newDepthTwoRoot(909,35222
+void InitMinTable::newDihedralRoot(937,35821
+void InitMinTable::newMinRoot(973,36648
+namespace minroots 1037,38372
+MinTable::MinTable(minroots::MinTable::MinTable1039,38394
+MinTable::~MinTable(1046,38471
+LFlags MinTable::descent(1077,39265
+LFlags MinTable::ldescent(1106,39772
+LFlags MinTable::rdescent(1127,40043
+void MinTable::fill(1144,40266
+int MinTable::insert(1151,40369
+bool MinTable::inOrder(1204,41766
+bool MinTable::inOrder(1229,42324
+const CoxWord& MinTable::inverse(1266,43044
+bool MinTable::isDescent(1290,43576
+const CoxWord& MinTable::normalForm(1316,44031
+const CoxWord& MinTable::power(1336,44423
+int MinTable::prod(1369,45076
+int MinTable::prod(1419,46633
+int MinTable::prod(1438,46920
+const CoxWord& MinTable::reduced(1462,47304
+DotVal bondCosineSum(::bondCosineSum1498,48110
+Length minroots::depth(1540,49169
+LFlags minroots::descent(1561,49440
+CoxWord& minroots::reduced(1574,49615
+LFlags minroots::support(1613,50239
+String& minroots::append(1649,50994
+void minroots::print(1702,52106
+
+graph.h,1072
+#define GRAPH_H11,202
+  typedef unsigned short 25,393
+  typedef List<CoxEntry> CoxMatrix;26,428
+namespace graph 41,645
+class graph::CoxGraph74,1682
+  Type d_type;graph::CoxGraph::d_type77,1716
+  Rank d_rank;graph::CoxGraph::d_rank78,1731
+  CoxMatrix d_matrix;graph::CoxGraph::d_matrix79,1746
+  LFlags d_S;graph::CoxGraph::d_S80,1768
+  List<LFlags> d_star;graph::CoxGraph::d_star81,1782
+  List<LFlags> d_starOps;graph::CoxGraph::d_starOps82,1805
+  void* operator new(graph::CoxGraph::operator new85,1875
+  void operator delete(graph::CoxGraph::operator delete86,1939
+namespace graph 105,2834
+  inline CoxEntry CoxGraph::M(graph::CoxGraph::M107,2853
+  inline Rank CoxGraph::rank(graph::CoxGraph::rank109,2953
+  inline LFlags CoxGraph::supp(graph::CoxGraph::supp110,3007
+  inline LFlags CoxGraph::star(graph::CoxGraph::star111,3060
+  inline LFlags CoxGraph::star(graph::CoxGraph::star112,3131
+  inline const List<LFlags>& CoxGraph::starOps(graph::CoxGraph::starOps114,3219
+  inline const Type& CoxGraph::type(graph::CoxGraph::type115,3294
+
+hecke.h,1068
+#define HECKE_H9,187
+template<class P> class HeckeMonomial 55,1438
+  CoxNbr d_x;57,1488
+  const P* d_pol;58,1502
+  typedef P PolType;60,1529
+  void operator delete(62,1585
+  HeckeMonomial(64,1673
+  HeckeMonomial(65,1695
+  ~HeckeMonomial(66,1743
+  bool operator> (const HeckeMonomial& m)68,1779
+  const P& pol(69,1822
+template<class P> class ToCoxNbr 75,2050
+  const List<HeckeMonomial<P> >* d_h;77,2095
+  ToCoxNbr(79,2142
+  ~ToCoxNbr(80,2198
+  CoxNbr operator(81,2216
+template<class P> struct NFCompare 84,2281
+  const SchubertContext& p;NFCompare::p85,2318
+  const Permutation& order;NFCompare::order86,2346
+  NFCompare(NFCompare::NFCompare87,2374
+  ~NFCompare(NFCompare::~NFCompare89,2491
+  bool operator()(NFCompare::operator()90,2510
+namespace hecke 98,2725
+inline bool HeckeMonomial<P>::operator> hecke::operator>101,2762
+template<class P> inline const P& HeckeMonomial<P>::pol(hecke::pol103,2854
+template<class P> inline CoxNbr HeckeMonomial<P>::x(hecke::x105,2938
+inline void HeckeMonomial<P>::setData(hecke::setData107,3030
+
+invkl.h,3456
+#define INVKL_H9,187
+  typedef List<const KLPol*> KLRow;39,704
+  typedef List<MuData> MuRow;40,740
+  typedef List<hecke::HeckeMonomial<KLPol> > HeckeElt;41,770
+namespace invkl 46,909
+namespace invkl 58,1094
+namespace invkl 63,1166
+class KLPol:invkl::KLPol65,1185
+  static PolynomialType polType(invkl::KLPol::polType67,1234
+  KLPol(invkl::KLPol::KLPol68,1288
+  KLPol(invkl::KLPol::KLPol69,1302
+  KLPol(invkl::KLPol::KLPol70,1353
+  ~KLPol(invkl::KLPol::~KLPol71,1429
+struct MuData 76,1564
+  CoxNbr x;MuData::x77,1580
+  KLCoeff mu;MuData::mu78,1592
+  Length height;MuData::height79,1606
+  MuData(MuData::MuData81,1642
+  MuData(MuData::MuData82,1657
+  ~MuData(MuData::~MuData84,1764
+struct KLStatus 89,1880
+  static const LFlags kl_done KLStatus::kl_done90,1898
+  static const LFlags mu_done KLStatus::mu_done91,1934
+  LFlags flags;KLStatus::flags92,1977
+  Ulong klrows;KLStatus::klrows93,1993
+  Ulong klnodes;KLStatus::klnodes94,2009
+  Ulong klcomputed;KLStatus::klcomputed95,2026
+  Ulong murows;KLStatus::murows96,2046
+  Ulong munodes;KLStatus::munodes97,2062
+  Ulong mucomputed;KLStatus::mucomputed98,2079
+  Ulong muzero;KLStatus::muzero99,2099
+  void* operator new(KLStatus::operator new101,2150
+  void operator delete(KLStatus::operator delete102,2214
+class KLContext 108,2330
+  KLSupport* d_klsupport;KLContext::d_klsupport109,2348
+  List<KLRow*> d_klList;KLContext::d_klList110,2374
+  List<MuRow*> d_muList;KLContext::d_muList111,2399
+  search::BinaryTree<KLPol> d_klTree;KLContext::d_klTree112,2424
+  KLStatus* d_status;KLContext::d_status113,2462
+  KLHelper* d_help;KLContext::d_help115,2535
+  void* operator new(KLContext::operator new119,2625
+  void operator delete(KLContext::operator delete120,2689
+namespace invkl 164,4995
+inline bool MuData::operator> invkl::MuData::operator>166,5014
+inline const ExtrRow& KLContext::extrList(invkl::KLContext::extrList168,5087
+inline CoxNbr KLContext::inverse(invkl::KLContext::inverse170,5188
+inline const BitMap& KLContext::involution(invkl::KLContext::involution172,5281
+inline bool KLContext::isExtrAllocated(invkl::KLContext::isExtrAllocated174,5371
+inline bool KLContext::isFullKL(invkl::KLContext::isFullKL176,5477
+inline bool KLContext::isFullMu(invkl::KLContext::isFullMu178,5564
+inline bool KLContext::isKLAllocated(invkl::KLContext::isKLAllocated180,5650
+inline bool KLContext::isMuAllocated(invkl::KLContext::isMuAllocated182,5739
+inline const KLRow& KLContext::klList(invkl::KLContext::klList184,5828
+inline const KLSupport& KLContext::klsupport(invkl::KLContext::klsupport186,5914
+inline Generator KLContext::last(invkl::KLContext::last187,5990
+inline const MuRow& KLContext::muList(invkl::KLContext::muList189,6080
+inline Rank KLContext::rank(invkl::KLContext::rank191,6166
+inline const SchubertContext& KLContext::schubert(invkl::KLContext::schubert192,6232
+inline Ulong KLContext::size(invkl::KLContext::size194,6327
+inline const search::BinaryTree<KLPol>& KLContext::tree(invkl::KLContext::tree195,6390
+inline void KLContext::applyIPermutation(invkl::KLContext::applyIPermutation198,6477
+inline void KLContext::clearFullKL(invkl::KLContext::clearFullKL201,6610
+inline void KLContext::clearFullMu(invkl::KLContext::clearFullMu202,6688
+inline void KLContext::setFullKL(invkl::KLContext::setFullKL203,6766
+inline void KLContext::setFullMu(invkl::KLContext::setFullMu204,6841
+
+commands.cpp,7936
+namespace commands 18,309
+  bool wgraph_warning ::wgraph_warning31,541
+  struct Empty_tag ::Empty_tag35,621
+  struct Interface_tag ::Interface_tag36,644
+  struct Main_tag ::Main_tag37,671
+  struct Uneq_tag ::Uneq_tag38,693
+  Stack<CommandTree *> treeStack;::treeStack40,718
+  CoxGroup* W ::W41,752
+  const char* author_tag ::author_tag106,2169
+  const char* betti_tag ::betti_tag107,2233
+  const char* coatoms_tag ::coatoms_tag108,2296
+  const char* compute_tag ::compute_tag109,2364
+  const char* descent_tag ::descent_tag110,2436
+  const char* duflo_tag ::duflo_tag111,2495
+  const char* extremals_tag ::extremals_tag112,2557
+  const char* fullcontext_tag ::fullcontext_tag114,2649
+  const char* help_tag ::help_tag115,2719
+  const char* ihbetti_tag ::ihbetti_tag116,2764
+  const char* input_tag ::input_tag117,2823
+  const char* interface_tag ::interface_tag118,2903
+  const char* interval_tag ::interval_tag119,2958
+  const char* intro_tag ::intro_tag120,3032
+  const char* inorder_tag ::inorder_tag122,3124
+  const char* invpol_tag ::invpol_tag123,3202
+  const char* klbasis_tag ::klbasis_tag124,3271
+  const char* lcorder_tag ::lcorder_tag125,3337
+  const char* lcells_tag ::lcells_tag126,3395
+  const char* lcwgraphs_tag ::lcwgraphs_tag127,3455
+  const char* lrcorder_tag ::lrcorder_tag128,3534
+  const char* lrcells_tag ::lrcells_tag129,3598
+  const char* lrcwgraphs_tag ::lrcwgraphs_tag130,3664
+  const char* lrwgraph_tag ::lrwgraph_tag132,3754
+  const char* lwgraph_tag ::lwgraph_tag133,3819
+  const char* matrix_tag ::matrix_tag134,3878
+  const char* mu_tag ::mu_tag135,3942
+  const char* mu0_tag ::mu0_tag136,3999
+  const char* pol_tag ::pol_tag137,4058
+  const char* q_tag ::q_tag138,4116
+  const char* qq_tag ::qq_tag139,4164
+  const char* rank_tag ::rank_tag140,4208
+  const char* rcorder_tag ::rcorder_tag141,4252
+  const char* rcells_tag ::rcells_tag142,4311
+  const char* rcwgraphs_tag ::rcwgraphs_tag143,4372
+  const char* rwgraph_tag ::rwgraph_tag144,4452
+  const char* schubert_tag ::schubert_tag145,4512
+  const char* show_tag ::show_tag146,4590
+  const char* showmu_tag ::showmu_tag147,4663
+  const char* slocus_tag ::slocus_tag148,4738
+  const char* sstratification_tag ::sstratification_tag150,4832
+  const char* type_tag ::type_tag152,4944
+  const char* uneq_tag ::uneq_tag154,5031
+  namespace uneq ::uneq156,5103
+namespace commands 178,5820
+namespace commands 182,5890
+  namespace interface commands::interface184,5912
+    struct In_tag commands::interface::In_tag188,5973
+    struct Out_tag commands::interface::Out_tag189,5995
+    namespace in commands::interface::in224,7176
+    namespace out commands::interface::out253,8344
+namespace commands 329,11691
+void relax_f(commands::relax_f331,11713
+void run(commands::run339,11756
+void default_error(380,12519
+void activate(::activate395,12663
+void ambigAction(415,12976
+void empty_error(436,13425
+void startup(469,14093
+namespace commands 541,16729
+CommandTree::CommandTree(commands::CommandTree::CommandTree543,16751
+CommandTree::~CommandTree(566,17305
+void CommandTree::prompt(579,17547
+void CommandTree::add(591,17749
+void CommandTree::setAction(608,18111
+void CommandTree::setRepeat(624,18404
+namespace commands 651,19181
+CommandData::CommandData(commands::CommandData::CommandData653,19203
+CommandData::~CommandData(commands::CommandData::~CommandData659,19379
+CommandData* ambigCommand(::ambigCommand695,20644
+void cellCompletion(708,20906
+void commandCompletion(733,21564
+template<> CommandTree* initCommandTree<initCommandTree754,22185
+CommandTree* emptyCommandTree(779,22863
+template<> CommandTree* initCommandTree<initCommandTree791,23079
+template<> CommandTree* initCommandTree<initCommandTree835,24987
+template<> CommandTree* initCommandTree<initCommandTree879,26620
+namespace commands 926,28242
+CommandTree* interface::inCommandTree(commands::interface::inCommandTree928,28264
+CommandTree* interface::outCommandTree(935,28381
+CommandTree* interfaceCommandTree(942,28500
+template<> CommandTree* initCommandTree<::initCommandTree958,28729
+namespace commands 1026,31717
+CommandTree* mainCommandTree(commands::mainCommandTree1028,31739
+template<> CommandTree* initCommandTree<::initCommandTree1044,31967
+namespace commands 1089,33715
+CommandTree* uneqCommandTree(commands::uneqCommandTree1091,33737
+void author_f(::author_f1206,37996
+void betti_f(1217,38119
+void coatoms_f(1248,38657
+void compute_f(1276,39093
+void descent_f(1306,39690
+void duflo_f(1333,40106
+void extremals_f(1368,40679
+void fullcontext_f(1400,41253
+void help_f(1423,41640
+void ihbetti_f(1434,41750
+void interface_f(1462,42182
+void interval_f(1473,42297
+void inorder_f(1536,43538
+void invpol_f(1583,44425
+void klbasis_f(1634,45230
+void lcorder_f(1674,45907
+void lcells_f(1710,46495
+void lcwgraphs_f(1733,46918
+void lrcorder_f(1757,47416
+void lrcells_f(1793,48013
+void lrcwgraphs_f(1829,48657
+void lrwgraph_f(1853,49164
+void lwgraph_f(1885,49757
+void matrix_f(1917,50342
+void not_implemented_f(1929,50449
+void mu_f(1941,50595
+void mu0_f(1987,51323
+void pol_f(2033,52053
+void q_f(2084,52840
+void qq_f(2105,53139
+void rank_f(2121,53311
+void rcorder_f(2140,53489
+void rcells_f(2176,54078
+void rcwgraphs_f(2212,54683
+void rwgraph_f(2236,55182
+void schubert_f(2268,55768
+void show_f(2302,56489
+void showmu_f(2357,57538
+void slocus_f 2404,58382
+void sstratification_f 2436,58950
+void type_f(2468,59545
+void uneq_f(2490,59866
+namespace uneq 2501,59966
+void klbasis_f(uneq::klbasis_f2503,59984
+void lcells_f(2543,60669
+void lcorder_f(2578,61239
+void lrcorder_f(2614,61847
+void lrcells_f(2650,62470
+void mu_f(2686,63087
+void pol_f(2761,64615
+void rcells_f(2811,65388
+void rcorder_f(2847,65990
+namespace commands 2887,66593
+void interface::abort_f(commands::interface::abort_f2889,66615
+void interface::alphabetic_f(2904,66845
+void interface::bourbaki_f(2921,67216
+void interface::decimal_f(2944,67707
+void interface::default_f(2961,68065
+void interface::gap_f(2983,68571
+void interface::hexadecimal_f(3008,69155
+void interface::in_f(3026,69531
+void interface::ordering_f(3033,69599
+void interface::out_f(3054,69856
+void interface::permutation_f(3061,69926
+void interface::symbol_f(3087,70386
+void interface::terse_f(3124,71147
+void interface::in::alphabetic_f(3145,71708
+void interface::in::bourbaki_f(3161,71979
+void interface::in::decimal_f(3183,72378
+void interface::in::default_f(3199,72636
+void interface::in::gap_f(3212,72803
+void interface::in::hexadecimal_f(3226,73019
+void interface::in::permutation_f(3242,73281
+void interface::in::postfix_f(3265,73635
+void interface::in::prefix_f(3279,73863
+void interface::in::separator_f(3293,74087
+void interface::in::terse_f(3307,74323
+void interface::out::alphabetic_f(3320,74512
+void interface::out::bourbaki_f(3336,74776
+void interface::out::decimal_f(3369,75427
+void interface::out::default_f(3385,75677
+void interface::out::gap_f(3401,75916
+void interface::out::hexadecimal_f(3421,76371
+void interface::out::permutation_f(3437,76625
+void interface::out::postfix_f(3465,77109
+void interface::out::prefix_f(3479,77340
+void interface::out::separator_f(3493,77567
+void interface::out::terse_f(3507,77806
+namespace commands 3550,79237
+void printCommands(commands::printCommands3552,79259
+CoxGroup* commands::currentGroup(3566,79538
+void printCommandTree(::printCommandTree3580,79713
+void interface_entry(3597,80055
+void interface_exit(3604,80160
+void main_entry(3612,80271
+namespace commands 3633,80676
+void interface::in_entry(commands::interface::in_entry3635,80698
+void interface::in_exit(3655,81141
+void interface::out_entry(3709,82440
+void interface::out_exit(3730,82912
+void main_exit(::main_exit3757,83352
+void uneq_entry(3769,83498
+void uneq_exit(3776,83553
+
+error.h,1522
+#define ERROR_H9,185
+  enum ErrorCodes 18,291
+    ABORT=19,311
+    BAD_COXENTRY,20,324
+    BAD_INPUT,21,342
+    BAD_LENGTH,22,357
+    BAD_LINE,23,373
+    BAD_RCYCFIELD,24,387
+    CHECKCOMM_FAIL,25,406
+    CHECKMIN_FAIL,26,426
+    COMMAND_NOT_FOUND,27,445
+    COMMAND_REDEFINITION,28,468
+    CONTEXTNBR_OVERFLOW,29,494
+    COXALLOC_FAIL,30,519
+    COXNBR_OVERFLOW,31,538
+    DENSEARRAY_OVERFLOW,32,559
+    EMPTY_POP,33,584
+    EMPTY_READ,34,599
+    ERROR_WARNING,35,615
+    EXTENSION_FAIL,36,634
+    FILE_NOT_FOUND,37,654
+    LEADING_WHITESPACE,38,674
+    LENGTH_OVERFLOW,39,698
+    KLCOEFF_OVERFLOW,40,719
+    KLCOEFF_NEGATIVE,41,741
+    KLCOEFF_UNDERFLOW,42,763
+    KL_FAIL,43,786
+    MEMORY_WARNING,44,799
+    MINROOT_FAIL,45,819
+    MINROOT_OVERFLOW,46,837
+    MODECHANGE_FAIL,47,859
+    MU_FAIL,48,880
+    MU_NEGATIVE,49,893
+    MU_OVERFLOW,50,910
+    NOT_AFFINE,51,927
+    NOT_COXELT,52,943
+    NOT_DESCENT,53,959
+    NOT_FINITE,54,976
+    NOT_GENERATOR,55,992
+    NOT_PERMUTATION,56,1011
+    NOT_SYMMETRIC,57,1032
+    NOT_YN,58,1051
+    OUT_OF_MEMORY,59,1063
+    PARNBR_OVERFLOW,60,1082
+    PARSE_ERROR,61,1103
+    RANKSET_FAILED,62,1120
+    READ_FAILED,63,1140
+    REPEATED_SYMBOL,64,1157
+    RESERVED_SYMBOL,65,1178
+    SKLCOEFF_OVERFLOW,66,1199
+    SKLCOEFF_UNDERFLOW,67,1222
+    TYPESET_FAILED,68,1246
+    UEMU_FAIL,69,1266
+    UNDEF_COXARR,70,1281
+    UNDEFINED_SHIFT,71,1299
+    WRONG_COXETER_ENTRY,72,1320
+    WRONG_RANK,73,1345
+    WRONG_TYPE74,1361
+
+interface.cpp,5064
+namespace interface 15,218
+  const char *alphabet ::alphabet24,392
+  const char *affine ::affine25,447
+  const Token not_token ::not_token27,484
+  const Token prefix_token ::prefix_token28,522
+  const Token postfix_token ::postfix_token29,563
+  const Token separator_token ::separator_token30,605
+  const Token begingroup_token ::begingroup_token31,649
+  const Token endgroup_token ::endgroup_token32,694
+  const Token longest_token ::longest_token33,737
+  const Token inverse_token ::inverse_token34,779
+  const Token power_token ::power_token35,821
+  const Token contextnbr_token ::contextnbr_token36,861
+  const Token densearray_token ::densearray_token37,907
+  const unsigned prefix_bit ::prefix_bit39,956
+  const unsigned postfix_bit ::postfix_bit40,989
+  const unsigned separator_bit ::separator_bit41,1023
+namespace interface 141,5152
+Interface::Interface(interface::Interface::Interface143,5175
+Interface::~Interface(181,5955
+void Interface::readSymbols(194,6144
+void Interface::setAutomaton(234,7297
+void Interface::setDescent(253,7605
+void Interface::setDescent(264,7764
+void Interface::setIn(275,7916
+void Interface::setOrder(290,8096
+void Interface::setOut(307,8497
+bool Interface::parseCoxWord(319,8722
+bool Interface::readCoxElt(376,10768
+namespace interface 467,13295
+DescentSetInterface::DescentSetInterface(interface::DescentSetInterface::DescentSetInterface469,13318
+DescentSetInterface::DescentSetInterface(interface::DescentSetInterface::DescentSetInterface479,13529
+DescentSetInterface::~DescentSetInterface(interface::DescentSetInterface::~DescentSetInterface485,13695
+void DescentSetInterface::setPrefix(interface::DescentSetInterface::setPrefix489,13744
+void DescentSetInterface::setPostfix(496,13831
+void DescentSetInterface::setSeparator(503,13920
+void DescentSetInterface::setTwosidedPrefix(510,14013
+void DescentSetInterface::setTwosidedPostfix(517,14116
+void DescentSetInterface::setTwosidedSeparator(524,14221
+namespace interface 560,15085
+GroupEltInterface::GroupEltInterface(interface::GroupEltInterface::GroupEltInterface562,15108
+GroupEltInterface::GroupEltInterface(interface::GroupEltInterface::GroupEltInterface576,15556
+GroupEltInterface::GroupEltInterface(592,15853
+GroupEltInterface::GroupEltInterface(608,16270
+GroupEltInterface::GroupEltInterface(624,16680
+GroupEltInterface::GroupEltInterface(637,17054
+GroupEltInterface::GroupEltInterface(653,17471
+GroupEltInterface::~GroupEltInterface(670,17925
+void GroupEltInterface::print(680,18092
+void GroupEltInterface::setPostfix(704,18621
+void GroupEltInterface::setPrefix(711,18704
+void GroupEltInterface::setSeparator(718,18785
+void GroupEltInterface::setSymbol(725,18872
+namespace interface 756,19865
+ReservedSymbols::ReservedSymbols(interface::ReservedSymbols::ReservedSymbols758,19888
+ReservedSymbols::ReservedSymbols(interface::ReservedSymbols::ReservedSymbols764,20020
+ReservedSymbols::~ReservedSymbols(interface::ReservedSymbols::~ReservedSymbols770,20173
+namespace interface 797,21149
+const String* alphabeticSymbols(interface::alphabeticSymbols799,21172
+const String* decimalSymbols(833,22097
+const String* hexSymbolsFromZero(855,22605
+const String* hexSymbols(878,23125
+const String* twohexSymbols(900,23630
+const Permutation& identityOrder(925,24337
+namespace interface 962,25276
+ParseInterface::ParseInterface(interface::ParseInterface::ParseInterface964,25299
+ParseInterface::~ParseInterface(972,25408
+void ParseInterface::reset(980,25489
+namespace interface 1004,26001
+TokenCell::~TokenCell(interface::TokenCell::~TokenCell1006,26024
+TokenTree::TokenTree(1012,26084
+TokenTree::~TokenTree(1018,26139
+Ulong TokenTree::find(1025,26187
+void TokenTree::insert(1067,27224
+namespace interface 1118,28534
+String& append(interface::append1120,28557
+String& append(1141,28986
+String& appendTwosided(1167,29514
+void print(1204,30371
+void print(1223,30755
+void printTwosided(1248,31243
+namespace interface 1313,33355
+const String* checkLeadingWhite(interface::checkLeadingWhite1315,33378
+bool checkRepeated(1338,33926
+const String* checkReserved(1373,34800
+Ulong descentWidth(1395,35344
+bool isBeginGroup(1415,35811
+bool isContextNbr(1421,35889
+bool isDenseArray(1427,35967
+bool isEndGroup(1433,36045
+bool isInverse(1439,36119
+bool isLongest(1445,36191
+bool isModifier(1451,36263
+bool isPower(1457,36347
+void makeSymbols(::makeSymbols1467,36432
+namespace interface 1486,36726
+CoxNbr readCoxNbr(interface::readCoxNbr1488,36749
+CoxNbr toCoxNbr(::toCoxNbr1546,38041
+Automaton *tokenAutomaton(tokenAutomaton1566,38360
+Automaton *tokenAut0(tokenAut01591,38733
+Automaton *tokenAut1(tokenAut11620,39385
+Automaton *tokenAut2(tokenAut21655,40179
+Automaton *tokenAut3(tokenAut31690,40954
+Automaton *tokenAut4(tokenAut41731,41901
+Automaton *tokenAut5(tokenAut51773,42866
+Automaton *tokenAut6(tokenAut61821,44005
+Automaton *tokenAut7(tokenAut71868,45124
+namespace interface 1935,46665
+Letter tokenType(interface::tokenType1937,46688
+
+transducer.cpp,784
+namespace transducer 13,200
+namespace transducer 62,2149
+FiltrationTerm::FiltrationTerm(transducer::FiltrationTerm::FiltrationTerm64,2173
+FiltrationTerm::~FiltrationTerm(77,2419
+void FiltrationTerm::fillNormalPieces(89,2627
+namespace transducer 166,5094
+SubQuotient::SubQuotient(transducer::SubQuotient::SubQuotient168,5118
+SubQuotient::~SubQuotient(187,5491
+ParNbr SubQuotient::extend(197,5667
+void SubQuotient::fill(326,9530
+Generator SubQuotient::firstDescent(399,11325
+void SubQuotient::schubertClosure(415,11589
+CoxWord& SubQuotient::reduced(466,12616
+namespace transducer 496,13220
+Transducer::Transducer(transducer::Transducer::Transducer498,13244
+Transducer::~Transducer(509,13522
+ParNbr dihedralMin(::dihedralMin537,14217
+ParNbr dihedralShift(571,14901
+
+automata.h,1416
+#define AUTOMATA_H9,193
+  typedef unsigned Letter;22,435
+  typedef unsigned State;23,462
+class Automaton 32,614
+  virtual State act(35,657
+class ExplicitAutomaton:ExplicitAutomaton43,910
+  State **d_table;d_table45,963
+  bits::BitMap d_accept;ExplicitAutomaton::d_accept46,982
+  State d_failure;ExplicitAutomaton::d_failure47,1007
+  State d_initial;ExplicitAutomaton::d_initial48,1026
+  Ulong d_rank;ExplicitAutomaton::d_rank49,1045
+  Ulong d_size;ExplicitAutomaton::d_size50,1061
+namespace automata 73,2109
+  inline void ExplicitAutomaton::setAccept(automata::ExplicitAutomaton::setAccept75,2131
+  inline void ExplicitAutomaton::setFailure(automata::ExplicitAutomaton::setFailure76,2205
+  inline void ExplicitAutomaton::setInitial(automata::ExplicitAutomaton::setInitial77,2275
+  inline void ExplicitAutomaton::setTable(automata::ExplicitAutomaton::setTable78,2345
+  inline State ExplicitAutomaton::act(automata::ExplicitAutomaton::act81,2444
+  inline State ExplicitAutomaton::initialState(automata::ExplicitAutomaton::initialState83,2536
+  inline bool ExplicitAutomaton::isAccept(automata::ExplicitAutomaton::isAccept84,2611
+  inline bool ExplicitAutomaton::isFailure(automata::ExplicitAutomaton::isFailure86,2702
+  inline Ulong ExplicitAutomaton::rank(automata::ExplicitAutomaton::rank88,2790
+  inline Ulong ExplicitAutomaton::size(automata::ExplicitAutomaton::size89,2854
+
+invkl.cpp,3267
+namespace invkl 44,1801
+  struct KLContext::KLHelper invkl::KLContext::KLHelper46,1820
+    KLContext* d_kl;invkl::KLContext::KLHelper::d_kl48,1862
+    KLHelper(invkl::KLContext::KLHelper::KLHelper50,1918
+    ~KLHelper(invkl::KLContext::KLHelper::~KLHelper51,1959
+  void* operator new(invkl::KLContext::KLHelper::operator new52,1979
+  void operator delete(invkl::KLContext::KLHelper::operator delete53,2043
+    void allocExtrRow(invkl::KLContext::KLHelper::allocExtrRow58,2248
+    const ExtrRow& extrList(invkl::KLContext::KLHelper::extrList66,2636
+    CoxNbr inverse(invkl::KLContext::KLHelper::inverse71,2918
+    bool isExtrAllocated(invkl::KLContext::KLHelper::isExtrAllocated73,3027
+    bool isKLAllocated(invkl::KLContext::KLHelper::isKLAllocated75,3117
+    bool isMuAllocated(invkl::KLContext::KLHelper::isMuAllocated76,3190
+    KLRow& klList(invkl::KLContext::KLHelper::klList77,3263
+    const KLPol& klPol(invkl::KLContext::KLHelper::klPol78,3327
+    KLSupport& klsupport(invkl::KLContext::KLHelper::klsupport80,3417
+    search::BinaryTree<KLPol>& klTree(invkl::KLContext::KLHelper::klTree81,3475
+    Generator last(invkl::KLContext::KLHelper::last82,3540
+    MuRow& muList(invkl::KLContext::KLHelper::muList86,3755
+    Rank rank(invkl::KLContext::KLHelper::rank87,3819
+    const SchubertContext& schubert(invkl::KLContext::KLHelper::schubert90,3974
+    KLStatus& status(invkl::KLContext::KLHelper::status91,4045
+namespace invkl 137,5449
+KLContext::KLContext(invkl::KLContext::KLContext139,5468
+KLContext::~KLContext(159,5921
+void KLContext::applyInverse(182,6439
+void KLContext::fillKL(195,6679
+void KLContext::fillMu(231,7290
+const KLPol& KLContext::klPol(242,7498
+KLCoeff KLContext::mu(295,8563
+void KLContext::permute(348,9692
+void KLContext::revertSize(400,10806
+void KLContext::row(416,11186
+void KLContext::setSize(460,12211
+namespace invkl 526,14518
+void KLContext::KLHelper::addCorrection(invkl::KLContext::KLHelper::addCorrection528,14537
+void KLContext::KLHelper::allocKLRow(585,15944
+void KLContext::KLHelper::allocMuRow(616,16675
+void KLContext::KLHelper::allocRowComputation(655,17646
+bool KLContext::KLHelper::checkKLRow(693,18487
+bool KLContext::KLHelper::checkMuRow(719,18933
+void KLContext::KLHelper::coatomCorrection(739,19301
+KLCoeff KLContext::KLHelper::computeMu(790,20561
+const KLPol* KLContext::KLHelper::fillKLPol(896,23258
+void KLContext::KLHelper::fillKLRow(984,25196
+void KLContext::KLHelper::initWorkspace(1035,26022
+void KLContext::KLHelper::inverseMuRow(1072,26705
+void KLContext::KLHelper::lastTerm(1122,27827
+void KLContext::KLHelper::makeKLRow(1160,28620
+void KLContext::KLHelper::muCorrection(1203,29410
+void KLContext::KLHelper::readMuRow(1253,30753
+KLCoeff KLContext::KLHelper::recursiveMu(1333,32373
+void KLContext::KLHelper::writeKLRow(1430,34590
+namespace invkl 1482,35911
+KLStatus::KLStatus(invkl::KLStatus::KLStatus1484,35930
+KLStatus::~KLStatus(invkl::KLStatus::~KLStatus1490,36048
+namespace invkl 1513,36776
+KLPol& KLPol::add(invkl::KLPol::add1515,36795
+KLPol& KLPol::subtract(1539,37357
+MuData* find(::find1581,38184
+namespace invkl 1606,38609
+const KLPol& one(invkl::one1608,38628
+const KLPol& zeroPol(::zeroPol1619,38722
+
+vector.h,534
+#define VECTOR_H9,182
+template <class T> class Vector37,604
+    List<T> d_list;40,651
+    Vector(43,716
+    Vector(44,732
+    Vector(45,766
+    Vector(46,818
+    Vector(47,878
+    ~Vector(48,948
+    T& operator[operator50,985
+    Ulong& dim(55,1279
+    T* ptr(56,1359
+    void reduceDim(57,1439
+    void setDim(58,1461
+    void setDimValue(59,1541
+    void setVect(60,1621
+    void setVect(62,1772
+    void setZero(63,1852
+    void setZero(64,1932
+    void setZero(65,2012
+    const T& operator[operator67,2108
+
+interface.h,6078
+#define INTERFACE_H9,195
+  typedef unsigned int 33,670
+  struct Hexadecimal 37,712
+  struct HexadecimalFromZero 38,737
+  struct Decimal 39,770
+  struct Alphabetic 40,791
+namespace interface 61,1209
+struct ParseInterface 117,3516
+  String str;118,3540
+  Ulong nestlevel;119,3554
+  List<CoxWord> a;120,3573
+  CoxWord c;121,3592
+  State x;122,3605
+  Ulong offset;123,3616
+  ParseInterface(125,3667
+  ~ParseInterface(126,3687
+  void reset(127,3708
+struct TokenCell 130,3728
+  Token val;131,3747
+  char letter;132,3760
+  TokenCell *left;left133,3775
+  TokenCell *right;right134,3794
+  void* operator new(136,3849
+  void operator delete(137,3913
+  TokenCell(139,3997
+  ~TokenCell(140,4015
+class TokenTree 143,4035
+  TokenCell *d_root;TokenTree::d_root145,4063
+  TokenTree(TokenTree::TokenTree149,4143
+  TokenCell *root(TokenTree::root156,4404
+struct DescentSetInterface 159,4445
+  String prefix;DescentSetInterface::prefix160,4474
+  String postfix;DescentSetInterface::postfix161,4491
+  String separator;DescentSetInterface::separator162,4509
+  String twosidedPrefix;DescentSetInterface::twosidedPrefix163,4529
+  String twosidedPostfix;DescentSetInterface::twosidedPostfix164,4554
+  String twosidedSeparator;DescentSetInterface::twosidedSeparator165,4580
+  void* operator new(DescentSetInterface::operator new166,4608
+  void* operator new(DescentSetInterface::operator new167,4672
+  void operator delete(DescentSetInterface::operator delete168,4731
+  void operator delete(DescentSetInterface::operator delete170,4825
+struct GroupEltInterface 182,5209
+  List<String> symbol;GroupEltInterface::symbol183,5236
+  String prefix;GroupEltInterface::prefix184,5259
+  String postfix;GroupEltInterface::postfix185,5276
+  String separator;GroupEltInterface::separator186,5294
+  void* operator new(GroupEltInterface::operator new187,5314
+  void operator delete(GroupEltInterface::operator delete188,5378
+  void* operator new(GroupEltInterface::operator new191,5476
+  void operator delete(GroupEltInterface::operator delete192,5535
+struct ReservedSymbols 209,6112
+  String beginGroup;ReservedSymbols::beginGroup210,6137
+  String endGroup;ReservedSymbols::endGroup211,6158
+  String longest;ReservedSymbols::longest212,6177
+  String inverse;ReservedSymbols::inverse213,6195
+  String power;ReservedSymbols::power214,6213
+  String contextnbr;ReservedSymbols::contextnbr215,6229
+  String densearray;ReservedSymbols::densearray216,6250
+class Interface 221,6345
+  Permutation d_order;Interface::d_order223,6375
+  TokenTree d_symbolTree;Interface::d_symbolTree224,6398
+  Automaton const* d_tokenAut;Interface::d_tokenAut225,6424
+  GroupEltInterface* d_in;Interface::d_in226,6455
+  GroupEltInterface* d_out;Interface::d_out227,6482
+  DescentSetInterface* d_descent;Interface::d_descent228,6510
+  String d_beginGroup;Interface::d_beginGroup229,6544
+  String d_endGroup;Interface::d_endGroup230,6567
+  String d_longest;Interface::d_longest231,6588
+  String d_inverse;Interface::d_inverse232,6608
+  String d_power;Interface::d_power233,6628
+  String d_contextNbr;Interface::d_contextNbr234,6646
+  String d_denseArray;Interface::d_denseArray235,6669
+  String d_parseEscape;Interface::d_parseEscape236,6692
+  List<String> d_reserved;Interface::d_reserved237,6716
+  Rank d_rank;Interface::d_rank238,6743
+  void* operator new(Interface::operator new241,6802
+  void operator delete(Interface::operator delete242,6866
+namespace interface 292,9682
+inline String& append(interface::append294,9705
+inline String& appendSymbol(interface::appendSymbol296,9821
+inline void print(interface::print299,9953
+inline void printSymbol(interface::printSymbol301,10084
+inline void printTwosided(interface::printTwosided303,10196
+inline Ulong TokenTree::find(interface::TokenTree::find307,10357
+inline const DescentSetInterface& Interface::descentInterface(interface::Interface::descentInterface310,10463
+inline Ulong Interface::getToken(interface::Interface::getToken312,10556
+inline const GroupEltInterface& Interface::inInterface(interface::Interface::inInterface314,10676
+inline const String& Interface::inPostfix(interface::Interface::inPostfix316,10757
+inline const String& Interface::inPrefix(interface::Interface::inPrefix317,10831
+inline const String& Interface::inSeparator(interface::Interface::inSeparator318,10903
+inline const String& Interface::inSymbol(interface::Interface::inSymbol319,10981
+inline bool Interface::isReserved(interface::Interface::isReserved321,11076
+inline const GroupEltInterface& Interface::outInterface(interface::Interface::outInterface323,11195
+inline const Permutation& Interface::order(interface::Interface::order325,11278
+inline const String& Interface::outPostfix(interface::Interface::outPostfix326,11347
+inline const String& Interface::outPrefix(interface::Interface::outPrefix327,11423
+inline const String& Interface::outSeparator(interface::Interface::outSeparator328,11497
+inline const String& Interface::outSymbol(interface::Interface::outSymbol329,11577
+inline Rank Interface::rank(interface::Interface::rank331,11674
+inline const TokenTree& Interface::symbolTree(interface::Interface::symbolTree332,11727
+inline void Interface::setInPostfix(interface::Interface::setInPostfix334,11805
+inline void Interface::setInPrefix(interface::Interface::setInPrefix335,11881
+inline void Interface::setInSeparator(interface::Interface::setInSeparator336,11955
+inline void Interface::setInSymbol(interface::Interface::setInSymbol337,12035
+inline void Interface::setOutPostfix(interface::Interface::setOutPostfix339,12140
+inline void Interface::setOutPrefix(interface::Interface::setOutPrefix340,12218
+inline void Interface::setOutSeparator(interface::Interface::setOutSeparator341,12294
+inline void Interface::setOutSymbol(interface::Interface::setOutSymbol343,12379
+inline String& Interface::append(interface::Interface::append346,12487
+inline void Interface::print(interface::Interface::print348,12601
+
+vector.hpp,314
+namespace vector 33,1098
+template <class T> Vector<T>& Vector<T>::operator+= vector::operator+=35,1118
+template <class T> Vector<T>& Vector<T>::operator-= operator-=53,1451
+template <class T> Vector<T>& Vector<T>::operator*= operator*=73,1804
+template <class T> void Vector<T>::reduceDim(reduceDim86,1989
+
+stack.hpp,453
+namespace stack 43,1559
+template <class T> Fifo<T>::Fifo(stack::Fifo45,1578
+template <class T> void Fifo<T>::push(stack::push50,1668
+template <class T> const T& Fifo<T>::pop(pop75,2180
+namespace stack 114,3033
+template <class T> Stack<T>::Stack(stack::Stack116,3052
+template <class T> Stack<T>::~Stack(stack::~Stack120,3094
+template <class T> void Stack<T>::push(stack::push128,3184
+template <class T> const T* Stack<T>::pop(pop138,3334
+
+dictionary.hpp,624
+namespace dictionary 24,830
+template <class T> Dictionary<T>::Dictionary(dictionary::Dictionary26,854
+template <class T> Dictionary<T>::~Dictionary(~Dictionary37,1095
+template <class T> DictCell<T>* Dictionary<T>::findCell(findCell48,1285
+template <class T> T* Dictionary<T>::find(find78,2063
+template <class T> void Dictionary<T>::insert(insert89,2227
+template <class T> void Dictionary<T>::remove(remove157,4193
+namespace dictionary 174,4496
+template <class T> DictCell<T>::~DictCell(dictionary::~DictCell176,4520
+namespace dictionary 201,4929
+  void printExtensions(dictionary::printExtensions204,4973
+
+interactive.h,142
+#define INTERACTIVE_H9,199
+class OutputFile 72,2040
+  FILE* d_file;74,2069
+  OutputFile(76,2094
+  ~OutputFile(77,2110
+  FILE* f(78,2127
+
+polynomials.hpp,1569
+namespace polynomials 26,861
+template <class T> Polynomial<T>::~Polynomial(polynomials::~Polynomial28,886
+Polynomial<T>& Polynomial<T>::operator+= polynomials::operator+=39,1074
+Polynomial<T>& Polynomial<T>::operator-= operator-=64,1451
+Polynomial<T>& Polynomial<T>::operator*= operator*=92,1894
+template <class T> Polynomial<T>& Polynomial<T>::operator*= operator*=125,2455
+Polynomial<T>& Polynomial<T>::operator/= operator/=144,2756
+namespace polynomials 191,3815
+bool operator== polynomials::operator==194,3860
+bool operator<= operator<=218,4360
+bool operator>= operator>=248,4964
+namespace polynomials 298,6462
+String& append(polynomials::append301,6506
+String& append(357,7354
+String& append(411,8207
+String& append(468,9277
+String& append(530,10498
+template <class T> void print(571,11557
+template <class T> void print(584,11742
+template <class T> void print(597,11934
+template <class T> void print(615,12293
+template <class T> void print(634,12672
+LaurentPolynomial<T>::LaurentPolynomial(LaurentPolynomial696,14694
+template<class T> LaurentPolynomial<T>::~LaurentPolynomial(~LaurentPolynomial705,14866
+bool LaurentPolynomial<T>::operator== operator==716,15072
+bool LaurentPolynomial<T>::operator<= operator<=737,15503
+bool LaurentPolynomial<T>::operator>= operator>=756,15887
+template<class T> void LaurentPolynomial<T>::adjustBounds(adjustBounds776,16333
+void LaurentPolynomial<T>::setBounds(setBounds807,16884
+void LaurentPolynomial<T>::setDeg(setDeg823,17190
+void LaurentPolynomial<T>::setVal(setVal839,17527
+
+affine.h,1383
+#define AFFINE_H9,182
+class AffineCoxGroup 35,728
+  void* operator new(38,813
+  void operator delete(39,877
+  AffineCoxGroup(42,967
+  virtual ~AffineCoxGroup(43,1015
+  CoxSize order(45,1060
+class AffineBigRankCoxGroup 48,1143
+  void* operator new(51,1241
+  void operator delete(52,1305
+  AffineBigRankCoxGroup(54,1401
+  virtual ~AffineBigRankCoxGroup(55,1456
+class GeneralABRCoxGroup:GeneralABRCoxGroup58,1496
+  void* operator new(GeneralABRCoxGroup::operator new61,1596
+  void operator delete(GeneralABRCoxGroup::operator delete62,1660
+class AffineMedRankCoxGroup 68,1834
+  void* operator new(AffineMedRankCoxGroup::operator new71,1932
+  void operator delete(AffineMedRankCoxGroup::operator delete72,1996
+class GeneralAMRCoxGroup:GeneralAMRCoxGroup78,2187
+  void* operator new(GeneralAMRCoxGroup::operator new81,2287
+  void operator delete(GeneralAMRCoxGroup::operator delete82,2351
+class AffineSmallRankCoxGroup 88,2525
+  void* operator new(AffineSmallRankCoxGroup::operator new91,2632
+  void operator delete(AffineSmallRankCoxGroup::operator delete92,2696
+class GeneralASRCoxGroup:GeneralASRCoxGroup98,2893
+  void* operator new(GeneralASRCoxGroup::operator new101,2995
+  void operator delete(GeneralASRCoxGroup::operator delete102,3059
+namespace affine 112,3315
+inline CoxSize AffineCoxGroup::order(affine::AffineCoxGroup::order114,3335
+
+kl.h,3220
+#define KL_H9,181
+  typedef List<const KLPol*> KLRow;42,732
+  typedef List<MuData> MuRow;43,768
+  typedef List<HeckeMonomial<KLPol> > HeckeElt;44,798
+class KLPol:KLPol90,2113
+  static PolynomialType polType(92,2162
+  KLPol(93,2212
+  KLPol(94,2226
+  KLPol(95,2277
+  ~KLPol(96,2353
+struct KLStatus 101,2491
+  static const LFlags kl_done 102,2509
+  static const LFlags mu_done 103,2545
+  LFlags flags;104,2588
+  Ulong klrows;105,2604
+  Ulong klnodes;106,2620
+  Ulong klcomputed;107,2637
+  Ulong murows;108,2657
+  Ulong munodes;109,2673
+  Ulong mucomputed;110,2690
+  Ulong muzero;111,2710
+  void* operator new(113,2761
+  void operator delete(114,2825
+  KLStatus(116,2908
+  ~KLStatus(117,2922
+struct MuData 120,2941
+  CoxNbr x;121,2957
+  KLCoeff mu;122,2969
+  Length height;123,2983
+  MuData(125,3019
+  MuData(126,3034
+  ~MuData(128,3141
+  bool operator> (const MuData& m) const;130,3174
+class MuFilter 133,3257
+  const SchubertContext& d_p;MuFilter::d_p135,3284
+  Length d_l;MuFilter::d_l136,3314
+class KLContext 144,3545
+  KLSupport* d_klsupport;KLContext::d_klsupport146,3573
+  List<KLRow*> d_klList;KLContext::d_klList147,3599
+  List<MuRow*> d_muList;KLContext::d_muList148,3624
+  BinaryTree<KLPol> d_klTree;KLContext::d_klTree149,3649
+  KLStatus* d_status;KLContext::d_status150,3679
+  KLHelper* d_help;KLContext::d_help152,3752
+  void* operator new(KLContext::operator new156,3842
+  void operator delete(KLContext::operator delete157,3906
+namespace kl 207,6466
+inline bool MuData::operator> kl::MuData::operator>209,6482
+inline bool MuFilter::operator() kl::MuFilter::operator()211,6555
+inline const ExtrRow& KLContext::extrList(kl::KLContext::extrList214,6680
+inline CoxNbr KLContext::inverse(kl::KLContext::inverse216,6781
+inline const BitMap& KLContext::involution(kl::KLContext::involution218,6874
+inline bool KLContext::isExtrAllocated(kl::KLContext::isExtrAllocated220,6964
+inline bool KLContext::isFullKL(kl::KLContext::isFullKL222,7070
+inline bool KLContext::isFullMu(kl::KLContext::isFullMu224,7157
+inline bool KLContext::isKLAllocated(kl::KLContext::isKLAllocated226,7243
+inline bool KLContext::isMuAllocated(kl::KLContext::isMuAllocated228,7332
+inline const KLRow& KLContext::klList(kl::KLContext::klList230,7421
+inline const KLSupport& KLContext::klsupport(kl::KLContext::klsupport232,7507
+inline Generator KLContext::last(kl::KLContext::last233,7583
+inline const MuRow& KLContext::muList(kl::KLContext::muList235,7673
+inline Rank KLContext::rank(kl::KLContext::rank237,7759
+inline const SchubertContext& KLContext::schubert(kl::KLContext::schubert238,7825
+inline Ulong KLContext::size(kl::KLContext::size240,7920
+inline const BinaryTree<KLPol>& KLContext::tree(kl::KLContext::tree241,7983
+inline void KLContext::print(kl::KLContext::print242,8058
+inline void KLContext::applyIPermutation(kl::KLContext::applyIPermutation245,8176
+inline void KLContext::clearFullKL(kl::KLContext::clearFullKL247,8302
+inline void KLContext::clearFullMu(kl::KLContext::clearFullMu248,8380
+inline void KLContext::setFullKL(kl::KLContext::setFullKL249,8458
+inline void KLContext::setFullMu(kl::KLContext::setFullMu250,8533
+
+commands.h,1112
+#define COMMANDS_H9,193
+  namespace interface 44,975
+namespace commands 55,1197
+namespace commands 60,1274
+struct CommandData commands::CommandData62,1296
+  String name;commands::CommandData::name63,1317
+  String tag;commands::CommandData::tag64,1332
+  bool autorepeat;commands::CommandData::autorepeat67,1384
+  void* operator new(commands::CommandData::operator new69,1438
+  void operator delete(commands::CommandData::operator delete70,1502
+class CommandTree:CommandTree77,1715
+  String d_prompt;CommandTree::d_prompt79,1776
+  CommandTree* d_help;CommandTree::d_help80,1795
+  void* operator new(CommandTree::operator new86,1933
+  void operator delete(CommandTree::operator delete87,1997
+namespace commands 111,3021
+inline void CommandTree::setEntry(commands::CommandTree::setEntry113,3043
+inline void CommandTree::entry(commands::CommandTree::entry114,3105
+inline void CommandTree::error(commands::CommandTree::error115,3164
+inline void CommandTree::exit(commands::CommandTree::exit116,3235
+inline CommandTree* CommandTree::helpMode(commands::CommandTree::helpMode117,3292
+
+constants.cpp,341
+namespace constants 10,160
+  Ulong *lmask;constants::lmask11,182
+  Ulong *leqmask;constants::leqmask12,198
+  unsigned *firstbit;constants::firstbit13,216
+  unsigned *lastbit;constants::lastbit14,238
+namespace constants 26,665
+void initConstants(constants::initConstants28,688
+unsigned firstBit(64,1367
+unsigned lastBit(81,1606
+
+main.cpp,62
+int main(165,8320
+void printVersion(::printVersion183,8537
+
+files.h,11701
+#define FILES_H9,187
+  enum Header 21,374
+  enum Header { bettiH,21,374
+  enum Header { bettiH, basisH,21,374
+  enum Header { bettiH, basisH, closureH,21,374
+  enum Header { bettiH, basisH, closureH, dufloH,21,374
+  enum Header { bettiH, basisH, closureH, dufloH, extremalsH,21,374
+  enum Header { bettiH, basisH, closureH, dufloH, extremalsH, ihBettiH,21,374
+		lCOrderH,22,447
+		lCOrderH, lCellsH,22,447
+		lCOrderH, lCellsH, lCellWGraphsH,22,447
+		lCOrderH, lCellsH, lCellWGraphsH, lWGraphH,22,447
+		lCOrderH, lCellsH, lCellWGraphsH, lWGraphH, lrCOrderH,22,447
+		lrCellsH,23,505
+		lrCellsH, lrCellWGraphsH,23,505
+		lrCellsH, lrCellWGraphsH, lrWGraphH,23,505
+		lrCellsH, lrCellWGraphsH, lrWGraphH, rCOrderH,23,505
+		lrCellsH, lrCellWGraphsH, lrWGraphH, rCOrderH, rCellsH,23,505
+		rCellWGraphsH,24,564
+		rCellWGraphsH, rWGraphH,24,564
+		rCellWGraphsH, rWGraphH, slocusH,24,564
+		rCellWGraphsH, rWGraphH, slocusH, sstratificationH,24,564
+		numHeaders}numHeaders25,619
+namespace files 196,7616
+struct PolynomialTraits files::PolynomialTraits198,7635
+  String prefix;files::PolynomialTraits::prefix199,7661
+  String postfix;files::PolynomialTraits::postfix200,7678
+  String indeterminate;files::PolynomialTraits::indeterminate201,7696
+  String sqrtIndeterminate;files::PolynomialTraits::sqrtIndeterminate202,7720
+  String posSeparator;files::PolynomialTraits::posSeparator203,7748
+  String negSeparator;files::PolynomialTraits::negSeparator204,7771
+  String product;files::PolynomialTraits::product205,7794
+  String exponent;files::PolynomialTraits::exponent206,7812
+  String expPrefix;files::PolynomialTraits::expPrefix207,7831
+  String expPostfix;files::PolynomialTraits::expPostfix208,7851
+  String zeroPol;files::PolynomialTraits::zeroPol209,7872
+  String one;files::PolynomialTraits::one210,7890
+  String negOne;files::PolynomialTraits::negOne211,7904
+  String modifierPrefix;files::PolynomialTraits::modifierPrefix212,7921
+  String modifierPostfix;files::PolynomialTraits::modifierPostfix213,7946
+  String modifierSeparator;files::PolynomialTraits::modifierSeparator214,7972
+  bool printExponent;files::PolynomialTraits::printExponent215,8000
+  bool printModifier;files::PolynomialTraits::printModifier216,8022
+  void* operator new(files::PolynomialTraits::operator new218,8076
+  void operator delete(files::PolynomialTraits::operator delete219,8140
+struct HeckeTraits 227,8338
+  String prefix;HeckeTraits::prefix228,8359
+  String postfix;HeckeTraits::postfix229,8376
+  String evenSeparator;HeckeTraits::evenSeparator230,8394
+  String oddSeparator;HeckeTraits::oddSeparator231,8418
+  String monomialPrefix;HeckeTraits::monomialPrefix232,8441
+  String monomialPostfix;HeckeTraits::monomialPostfix233,8466
+  String monomialSeparator;HeckeTraits::monomialSeparator234,8492
+  String muMark;HeckeTraits::muMark235,8520
+  String hyphens;HeckeTraits::hyphens236,8537
+  Ulong lineSize;HeckeTraits::lineSize237,8555
+  Ulong indent;HeckeTraits::indent238,8573
+  Ulong evenWidth;HeckeTraits::evenWidth239,8589
+  Ulong oddWidth;HeckeTraits::oddWidth240,8608
+  char padChar;HeckeTraits::padChar241,8626
+  bool doShift;HeckeTraits::doShift242,8642
+  bool reversePrint;HeckeTraits::reversePrint243,8658
+  bool twoSided;HeckeTraits::twoSided244,8679
+  void* operator new(HeckeTraits::operator new246,8728
+  void operator delete(HeckeTraits::operator delete247,8792
+struct AddHeckeTraits:AddHeckeTraits255,9033
+  GroupEltInterface* eltTraits;AddHeckeTraits::eltTraits256,9112
+  void* operator new(AddHeckeTraits::operator new258,9176
+  void operator delete(AddHeckeTraits::operator delete259,9240
+struct PartitionTraits 267,9488
+  String prefix;PartitionTraits::prefix268,9513
+  String postfix;PartitionTraits::postfix269,9530
+  String separator;PartitionTraits::separator270,9548
+  String classPrefix;PartitionTraits::classPrefix271,9568
+  String classPostfix;PartitionTraits::classPostfix272,9590
+  String classSeparator;PartitionTraits::classSeparator273,9613
+  String classNumberPrefix;PartitionTraits::classNumberPrefix274,9638
+  String classNumberPostfix;PartitionTraits::classNumberPostfix275,9666
+  bool printClassNumber;PartitionTraits::printClassNumber276,9695
+  void* operator new(PartitionTraits::operator new278,9752
+  void operator delete(PartitionTraits::operator delete279,9816
+struct PosetTraits 287,10009
+  String prefix;PosetTraits::prefix288,10030
+  String postfix;PosetTraits::postfix289,10047
+  String separator;PosetTraits::separator290,10065
+  String edgePrefix;PosetTraits::edgePrefix291,10085
+  String edgePostfix;PosetTraits::edgePostfix292,10106
+  String edgeSeparator;PosetTraits::edgeSeparator293,10128
+  String nodePrefix;PosetTraits::nodePrefix294,10152
+  String nodePostfix;PosetTraits::nodePostfix295,10173
+  Ulong nodeShift;PosetTraits::nodeShift296,10195
+  bool printNode;PosetTraits::printNode297,10214
+  void* operator new(PosetTraits::operator new299,10264
+  void operator delete(PosetTraits::operator delete300,10328
+struct WgraphTraits 308,10501
+  String prefix;WgraphTraits::prefix309,10523
+  String postfix;WgraphTraits::postfix310,10540
+  String separator;WgraphTraits::separator311,10558
+  String edgeListPrefix;WgraphTraits::edgeListPrefix312,10578
+  String edgeListPostfix;WgraphTraits::edgeListPostfix313,10603
+  String edgeListSeparator;WgraphTraits::edgeListSeparator314,10629
+  String edgePrefix;WgraphTraits::edgePrefix315,10657
+  String edgePostfix;WgraphTraits::edgePostfix316,10678
+  String edgeSeparator;WgraphTraits::edgeSeparator317,10700
+  String nodePrefix;WgraphTraits::nodePrefix318,10724
+  String nodePostfix;WgraphTraits::nodePostfix319,10745
+  String nodeSeparator;WgraphTraits::nodeSeparator320,10767
+  String nodeNumberPrefix;WgraphTraits::nodeNumberPrefix321,10791
+  String nodeNumberPostfix;WgraphTraits::nodeNumberPostfix322,10818
+  Ulong nodeShift;WgraphTraits::nodeShift323,10846
+  int padSize;WgraphTraits::padSize324,10865
+  bool hasPadding;WgraphTraits::hasPadding325,10880
+  bool printNodeNumber;WgraphTraits::printNodeNumber326,10899
+  void* operator new(WgraphTraits::operator new328,10955
+  void operator delete(WgraphTraits::operator delete329,11019
+struct OutputTraits 337,11197
+  String versionString;OutputTraits::versionString339,11230
+  String typeString;OutputTraits::typeString340,11254
+  String header[OutputTraits::header342,11298
+  String prefix[OutputTraits::prefix343,11327
+  String postfix[OutputTraits::postfix344,11356
+  bool hasHeader[OutputTraits::hasHeader345,11386
+  String closureSeparator1;OutputTraits::closureSeparator1347,11455
+  String closureSeparator2;OutputTraits::closureSeparator2348,11483
+  String closureSeparator3;OutputTraits::closureSeparator3349,11511
+  String closureSeparator4;OutputTraits::closureSeparator4350,11539
+  String closureSeparator5;OutputTraits::closureSeparator5351,11567
+  String closureSeparator6;OutputTraits::closureSeparator6352,11595
+  String eltList;OutputTraits::eltList353,11623
+  String singularLocus;OutputTraits::singularLocus354,11641
+  String singularStratification;OutputTraits::singularStratification355,11665
+  String emptySingularLocus;OutputTraits::emptySingularLocus356,11698
+  String emptySingularStratification;OutputTraits::emptySingularStratification357,11727
+  String bettiPrefix;OutputTraits::bettiPrefix359,11786
+  String bettiPostfix;OutputTraits::bettiPostfix360,11808
+  String bettiSeparator;OutputTraits::bettiSeparator361,11831
+  String bettiRankPrefix;OutputTraits::bettiRankPrefix362,11856
+  String bettiRankPostfix;OutputTraits::bettiRankPostfix363,11882
+  String cellNumberPrefix;OutputTraits::cellNumberPrefix364,11909
+  String cellNumberPostfix;OutputTraits::cellNumberPostfix365,11936
+  String closureSizePrefix;OutputTraits::closureSizePrefix366,11964
+  String closureSizePostfix;OutputTraits::closureSizePostfix367,11992
+  String coatomPrefix;OutputTraits::coatomPrefix368,12021
+  String coatomPostfix;OutputTraits::coatomPostfix369,12044
+  String coatomSeparator;OutputTraits::coatomSeparator370,12068
+  String compCountPrefix;OutputTraits::compCountPrefix371,12094
+  String compCountPostfix;OutputTraits::compCountPostfix372,12120
+  String dufloPrefix;OutputTraits::dufloPrefix373,12147
+  String dufloPostfix;OutputTraits::dufloPostfix374,12169
+  String dufloSeparator;OutputTraits::dufloSeparator375,12192
+  String dufloListPrefix;OutputTraits::dufloListPrefix376,12217
+  String dufloListPostfix;OutputTraits::dufloListPostfix377,12243
+  String dufloListSeparator;OutputTraits::dufloListSeparator378,12270
+  String dufloNumberPrefix;OutputTraits::dufloNumberPrefix379,12299
+  String dufloNumberPostfix;OutputTraits::dufloNumberPostfix380,12327
+  String eltNumberPrefix;OutputTraits::eltNumberPrefix381,12356
+  String eltNumberPostfix;OutputTraits::eltNumberPostfix382,12382
+  String eltListPrefix;OutputTraits::eltListPrefix383,12409
+  String eltListPostfix;OutputTraits::eltListPostfix384,12433
+  String eltListSeparator;OutputTraits::eltListSeparator385,12458
+  String eltPrefix;OutputTraits::eltPrefix386,12485
+  String eltPostfix;OutputTraits::eltPostfix387,12505
+  String eltDataPrefix;OutputTraits::eltDataPrefix388,12526
+  String eltDataPostfix;OutputTraits::eltDataPostfix389,12550
+  String graphListPrefix;OutputTraits::graphListPrefix390,12575
+  String graphListPostfix;OutputTraits::graphListPostfix391,12601
+  String graphListSeparator;OutputTraits::graphListSeparator392,12628
+  String lDescentPrefix;OutputTraits::lDescentPrefix393,12657
+  String lDescentPostfix;OutputTraits::lDescentPostfix394,12682
+  String rDescentPrefix;OutputTraits::rDescentPrefix395,12708
+  String rDescentPostfix;OutputTraits::rDescentPostfix396,12733
+  String lengthPrefix;OutputTraits::lengthPrefix397,12759
+  String lengthPostfix;OutputTraits::lengthPostfix398,12782
+  String closeString;OutputTraits::closeString399,12806
+  String bettiHyphens;OutputTraits::bettiHyphens400,12828
+  Ulong lineSize;OutputTraits::lineSize401,12851
+  PolynomialTraits polTraits;OutputTraits::polTraits403,12910
+  HeckeTraits heckeTraits;OutputTraits::heckeTraits405,12984
+  AddHeckeTraits addHeckeTraits;OutputTraits::addHeckeTraits406,13011
+  PartitionTraits partitionTraits;OutputTraits::partitionTraits408,13084
+  WgraphTraits wgraphTraits;OutputTraits::wgraphTraits410,13157
+  PosetTraits posetTraits;OutputTraits::posetTraits412,13222
+  bool printBettiRank;OutputTraits::printBettiRank414,13258
+  bool printCellNumber;OutputTraits::printCellNumber415,13281
+  bool printClosureSize;OutputTraits::printClosureSize416,13305
+  bool printCoatoms;OutputTraits::printCoatoms417,13330
+  bool printCompCount;OutputTraits::printCompCount418,13351
+  bool printDufloNumber;OutputTraits::printDufloNumber419,13374
+  bool printEltDescents;OutputTraits::printEltDescents420,13399
+  bool printElt;OutputTraits::printElt421,13424
+  bool printEltData;OutputTraits::printEltData422,13441
+  bool printEltNumber;OutputTraits::printEltNumber423,13462
+  bool printLength;OutputTraits::printLength424,13485
+  bool printType;OutputTraits::printType425,13505
+  bool printVersion;OutputTraits::printVersion426,13523
+  bool hasBettiPadding;OutputTraits::hasBettiPadding427,13544
+  void* operator new(OutputTraits::operator new429,13600
+  void* operator new(OutputTraits::operator new430,13664
+  void operator delete(OutputTraits::operator delete431,13723
+  void operator delete(OutputTraits::operator delete433,13810
+
+uneqkl.h,3221
+#define UNEQKL_H9,189
+  typedef List<const KLPol*> KLRow;40,733
+  typedef List<MuData> MuRow;42,770
+  typedef List<MuRow*> MuTable;43,800
+  typedef List<HeckeMonomial<KLPol> > HeckeElt;44,832
+class KLPol:KLPol71,1408
+  static PolynomialType polType(75,1558
+  KLPol(76,1613
+  KLPol(77,1627
+  KLPol(78,1679
+  ~KLPol(79,1757
+  KLPol& add(80,1772
+  KLPol& subtract(81,1817
+class MuPol:MuPol84,1889
+  struct const_tag MuPol::const_tag86,1946
+  MuPol(MuPol::MuPol87,1969
+  MuPol(MuPol::MuPol88,1983
+  MuPol(MuPol::MuPol90,2073
+  ~MuPol(MuPol::~MuPol92,2186
+struct MuData 95,2205
+  CoxNbr x;MuData::x96,2221
+  const MuPol* pol;MuData::pol97,2233
+  void operator delete(MuData::operator delete99,2287
+  MuData(MuData::MuData101,2368
+  MuData(MuData::MuData102,2383
+struct KLStatus 109,2704
+  Ulong klrows;KLStatus::klrows110,2722
+  Ulong klnodes;KLStatus::klnodes111,2738
+  Ulong klcomputed;KLStatus::klcomputed112,2755
+  Ulong murows;KLStatus::murows113,2775
+  Ulong munodes;KLStatus::munodes114,2791
+  Ulong mucomputed;KLStatus::mucomputed115,2808
+  Ulong muzero;KLStatus::muzero116,2828
+  void* operator new(KLStatus::operator new118,2879
+  void operator delete(KLStatus::operator delete119,2943
+  KLStatus(KLStatus::KLStatus121,3026
+  ~KLStatus(KLStatus::~KLStatus122,3043
+class KLContext 125,3065
+  KLSupport* d_klsupport;KLContext::d_klsupport126,3083
+  List<KLRow*> d_klList;KLContext::d_klList127,3109
+  List<MuTable*> d_muTable;KLContext::d_muTable128,3134
+  List<Length> d_L;KLContext::d_L129,3162
+  List<Length> d_length;KLContext::d_length130,3210
+  BinaryTree<KLPol> d_klTree;KLContext::d_klTree131,3269
+  BinaryTree<MuPol> d_muTree;KLContext::d_muTree132,3299
+  KLStatus* d_status;KLContext::d_status133,3329
+  KLHelper* d_help;KLContext::d_help135,3402
+  void* operator new(KLContext::operator new139,3492
+  void operator delete(KLContext::operator delete140,3556
+namespace uneqkl 176,5327
+inline bool MuData::operator> uneqkl::MuData::operator>178,5347
+inline bool MuData::operator< uneqkl::MuData::operator<179,5419
+inline bool MuData::operator== uneqkl::MuData::operator==180,5491
+inline const ExtrRow& KLContext::extrList(uneqkl::KLContext::extrList182,5566
+inline Ulong KLContext::genL(uneqkl::KLContext::genL184,5667
+inline CoxNbr KLContext::inverse(uneqkl::KLContext::inverse185,5739
+inline bool KLContext::isKLAllocated(uneqkl::KLContext::isKLAllocated187,5830
+inline bool KLContext::isMuAllocated(uneqkl::KLContext::isMuAllocated189,5919
+inline const KLRow& KLContext::klList(uneqkl::KLContext::klList191,6035
+inline const KLSupport& KLContext::klsupport(uneqkl::KLContext::klsupport193,6121
+inline Generator KLContext::last(uneqkl::KLContext::last194,6197
+inline Ulong KLContext::length(uneqkl::KLContext::length196,6285
+inline const MuRow& KLContext::muList(uneqkl::KLContext::muList197,6361
+inline Rank KLContext::rank(uneqkl::KLContext::rank199,6476
+inline const SchubertContext& KLContext::schubert(uneqkl::KLContext::schubert200,6542
+inline Ulong KLContext::size(uneqkl::KLContext::size202,6636
+inline void KLContext::applyIPermutation(uneqkl::KLContext::applyIPermutation204,6700
+
+polynomials.h,3069
+#define POLYNOMIALS_H9,179
+  typedef Ulong Degree;21,404
+  typedef long SDegree;22,428
+namespace polynomials 30,640
+template <class T> class Polynomial 101,3041
+  Vector<T> v;103,3091
+  typedef struct {} const_tag;105,3115
+  void operator delete(107,3181
+  Polynomial<T>(Degree d):v(v110,3290
+  Polynomial<T>(const Polynomial<T>& q):v(v111,3327
+  Polynomial<T>(T* const& ptr, const Degree& d):v(v112,3378
+  Polynomial<T>(const T& c, const_tag):v(v113,3441
+  T& operator[operator116,3552
+  void reduceDeg(117,3631
+  void setDeg(118,3710
+  void setDegValue(119,3789
+  void setVect(120,3868
+  void setZero(121,3947
+  void setZero(122,4026
+  void setZero(123,4105
+  Vector<T>& vect(124,4184
+  const T& operator[operator126,4279
+class Monomial139,4967
+    Degree n;142,4997
+    Monomial(144,5021
+template <class T> class LaurentPolynomial 147,5059
+  Polynomial<T> d_pol;LaurentPolynomial::d_pol149,5116
+  SDegree d_valuation;LaurentPolynomial::d_valuation150,5139
+  void operator delete(LaurentPolynomial::operator delete153,5249
+  LaurentPolynomial<LaurentPolynomial::LaurentPolynomial155,5344
+namespace polynomials 188,6780
+inline bool operator!= polynomials::operator!=191,6825
+inline bool operator< polynomials::operator<194,6939
+inline bool operator> polynomials::operator>197,7052
+inline bool LaurentPolynomial<T>::operator!= polynomials::operator!=207,7403
+inline bool LaurentPolynomial<T>::operator> polynomials::operator>210,7529
+inline bool LaurentPolynomial<T>::operator< polynomials::operator<213,7654
+template<class T> inline SDegree LaurentPolynomial<T>::deg(polynomials::deg216,7762
+inline bool LaurentPolynomial<T>::isZero(polynomials::isZero219,7884
+inline void LaurentPolynomial<T>::setDegValue(polynomials::setDegValue221,7977
+inline void LaurentPolynomial<T>::setValValue(polynomials::setValValue224,8097
+template<class T> inline SDegree LaurentPolynomial<T>::val(polynomials::val226,8182
+template<class T> inline void LaurentPolynomial<T>::setZero(polynomials::setZero228,8274
+template<class T> inline void Polynomial<T>::reduceDeg(polynomials::reduceDeg233,8446
+template<class T> inline void Polynomial<T>::setDeg(polynomials::setDeg234,8520
+template<class T> inline void Polynomial<T>::setDegValue(polynomials::setDegValue236,8608
+template<class T> inline void Polynomial<T>::setVect(polynomials::setVect238,8706
+template<class T> inline void Polynomial<T>::setZero(polynomials::setZero241,8830
+template<class T> inline void Polynomial<T>::setZero(polynomials::setZero243,8902
+template<class T> inline void Polynomial<T>::setZero(polynomials::setZero245,8989
+template<class T> inline Vector<T>& Polynomial<T>::vect(polynomials::vect248,9114
+inline Polynomial<T>& Polynomial<T>::operator= polynomials::operator=253,9305
+template<class T> inline Ulong Polynomial<T>::deg(polynomials::deg256,9405
+template<class T> inline bool Polynomial<T>::isZero(polynomials::isZero257,9483
+template<class T> inline const Vector<T>& Polynomial<T>::vect(polynomials::vect259,9578
+
+cells.cpp,879
+namespace cells 12,172
+  typedef List<CoxNbr> CoxList;::CoxList53,2101
+namespace cells 75,2976
+void lCells(cells::lCells77,2995
+void rCells(195,5706
+void lrCells(303,7812
+void lDescentPartition(321,8150
+void lStringEquiv(345,8609
+void lStringEquiv(396,9771
+void rDescentPartition(447,10795
+void rStringEquiv(471,11255
+void rStringEquiv(517,12065
+void lGeneralizedTau(567,13007
+void rGeneralizedTau(643,14402
+namespace cells 747,17025
+void lGraph(cells::lGraph749,17044
+void lrGraph(781,17790
+void rGraph(813,18527
+void lWGraph(845,19271
+void lWGraph(896,20498
+void lrWGraph(973,22167
+void lrWGraph(1013,22896
+void rWGraph(1090,24557
+void rWGraph(1130,25281
+namespace cells 1212,27187
+void lGraph(cells::lGraph1214,27206
+void lrGraph(1261,28221
+void rGraph(1299,29105
+namespace cells 1355,30338
+CoxNbr checkClasses cells::checkClasses1357,30357
+
+bits.h,5046
+#define BITS_H9,178
+  typedef unsigned char 31,539
+  typedef Ulong LFlags;32,570
+  typedef Ulong SetElt;33,594
+  typedef List<SetElt> Set;34,618
+class bits::Permutation:bits::Permutation67,1559
+class bits::BitMap 80,1893
+  List<LFlags> d_map;bits::BitMap::d_map82,1924
+  Ulong d_size;bits::BitMap::d_size83,1946
+  BitMap(bits::BitMap::BitMap86,2006
+  BitMap(bits::BitMap::BitMap88,2047
+class bits::BitMap::Iterator 123,3560
+  static const LFlags posBits bits::BitMap::Iterator::posBits125,3637
+  static const LFlags baseBits bits::BitMap::Iterator::baseBits127,3745
+  const BitMap* d_b;bits::BitMap::Iterator::d_b128,3788
+  const LFlags* d_chunk;bits::BitMap::Iterator::d_chunk129,3809
+  Ulong d_bitAddress;bits::BitMap::Iterator::d_bitAddress130,3834
+class bits::BitMap::ReverseIterator 145,4359
+  Iterator d_i;bits::BitMap::ReverseIterator::d_i147,4407
+  ReverseIterator(bits::BitMap::ReverseIterator::ReverseIterator149,4432
+  explicit ReverseIterator(bits::BitMap::ReverseIterator::ReverseIterator150,4456
+  ~ReverseIterator(bits::BitMap::ReverseIterator::~ReverseIterator151,4513
+class bits::Partition 159,4935
+  List<Ulong> d_list;bits::Partition::d_list161,4969
+  Ulong d_classCount;bits::Partition::d_classCount162,4991
+  typedef Ulong valueType;bits::Partition::valueType165,5046
+class bits::PartitionIterator 193,6200
+  const Partition& d_pi;bits::PartitionIterator::d_pi194,6232
+  Permutation d_a;bits::PartitionIterator::d_a195,6257
+  Set d_class;bits::PartitionIterator::d_class196,6276
+  Ulong d_base;bits::PartitionIterator::d_base197,6291
+  bool d_valid;bits::PartitionIterator::d_valid198,6307
+class bits::SubSet 209,6633
+  BitMap d_bitmap;bits::SubSet::d_bitmap211,6664
+  List<Ulong> d_list;bits::SubSet::d_list212,6683
+  SubSet(bits::SubSet::SubSet215,6749
+  SubSet(bits::SubSet::SubSet216,6764
+  SubSet(bits::SubSet::SubSet217,6816
+namespace bits 239,7954
+  inline BitMap& BitMap::operator= bits::BitMap::operator=241,7972
+  inline void BitMap::clearBit(bits::BitMap::clearBit242,8049
+  inline LFlags BitMap::chunk(bits::BitMap::chunk244,8153
+  inline bool BitMap::getBit(bits::BitMap::getBit245,8224
+  inline LFlags BitMap::lastchunk(bits::BitMap::lastchunk247,8335
+  inline void BitMap::reset(bits::BitMap::reset249,8425
+  inline void BitMap::setBit(bits::BitMap::setBit250,8474
+  inline void BitMap::setBit(bits::BitMap::setBit252,8573
+  inline Ulong BitMap::size(bits::BitMap::size254,8675
+  inline BitMap::ReverseIterator BitMap::rbegin(bits::BitMap::rbegin255,8728
+  inline BitMap::ReverseIterator BitMap::rend(bits::BitMap::rend257,8821
+  inline Ulong BitMap::Iterator::bitPos(bits::BitMap::Iterator::bitPos260,8915
+  inline Ulong BitMap::Iterator::operator* bits::BitMap::Iterator::operator*262,8999
+  inline bool BitMap::Iterator::operator== bits::BitMap::Iterator::operator==264,9078
+  inline bool BitMap::Iterator::operator!= bits::BitMap::Iterator::operator!=266,9200
+  inline Ulong BitMap::ReverseIterator::operator* bits::BitMap::ReverseIterator::operator*269,9323
+  inline BitMap::ReverseIterator& BitMap::ReverseIterator::operator++ bits::BitMap::ReverseIterator::operator++271,9427
+  inline BitMap::ReverseIterator& BitMap::ReverseIterator::operator-- bits::BitMap::ReverseIterator::operator--273,9527
+  inline bool BitMap::ReverseIterator::operator== bits::BitMap::ReverseIterator::operator==275,9627
+  inline bool BitMap::ReverseIterator::operator!= bits::BitMap::ReverseIterator::operator!=277,9737
+  inline const Ulong& Partition::operator() bits::Partition::operator()280,9848
+  inline Ulong Partition::classCount(bits::Partition::classCount284,10018
+  inline void Partition::setClassCount(bits::Partition::setClassCount285,10086
+  inline void Partition::setSize(bits::Partition::setSize287,10174
+  inline Ulong Partition::size(bits::Partition::size288,10244
+  inline PartitionIterator::operator bool(bits::PartitionIterator::operator bool290,10308
+  inline const Set& PartitionIterator::operator()(bits::PartitionIterator::operator()292,10380
+  inline SubSet& SubSet::assign(bits::SubSet::assign298,10624
+  inline const BitMap& SubSet::bitMap(bits::SubSet::bitMap300,10715
+  inline BitMap& SubSet::bitMap(bits::SubSet::bitMap301,10780
+  inline Ulong SubSet::find(bits::SubSet::find302,10833
+  inline bool SubSet::isMember(bits::SubSet::isMember304,10920
+  inline void SubSet::setBitMapSize(bits::SubSet::setBitMapSize306,11007
+  inline void SubSet::setListSize(bits::SubSet::setListSize307,11082
+  inline Ulong SubSet::size(bits::SubSet::size308,11153
+  inline void SubSet::sortList(bits::SubSet::sortList309,11213
+namespace bits 314,11355
+template <class T, class F> Partition::Partition(bits::Partition::Partition316,11373
+template <class I, class F> Partition::Partition(341,11964
+void rightRangePermute(376,12831
+template <class T> void sortI(415,13574
+template <class T, class C> void sortI(450,14247
+template <class T, class F> void sortI_f(488,15051
+
+files.hpp,1280
+namespace files 46,1932
+void appendCoefficient(files::appendCoefficient49,1970
+void appendExponent(57,2100
+void appendHeckeMonomial(76,2462
+  typedef typename M::PolType 82,2666
+void appendMonomial(120,3552
+void appendMuMark(152,4172
+void appendPolynomial(170,4595
+  void makeWGraph(206,5302
+void printAsBasisElt(230,5841
+  typedef typename H::eltType::PolType 241,6088
+void printClosure(269,6692
+void printCoefficient(337,8347
+  void printDuflo(345,8503
+void printExponent(396,10026
+void printExtremals(415,10378
+  void printHeckeElt(439,10830
+  typedef typename H::eltType::PolType 447,11037
+  void printHeckeElt(459,11261
+  void printIHBetti(495,12167
+void printLCOrder(510,12463
+void printLCells(529,12837
+void printLCellWGraphs(545,13175
+void printLRCOrder(564,13586
+void printLRCells(584,13970
+void printLRCellWGraphs(600,14312
+  void printLRWGraph(619,14707
+  void printLWGraph(668,15886
+void printMonomial(717,17069
+void printMuMark(750,17820
+void printPolynomial(768,18241
+void printRCOrder(804,18944
+void printRCells(823,19318
+void printRCellWGraphs(839,19656
+  void printRWGraph(854,20008
+  void printSingularLocus(903,21179
+  void printSingularStratification(936,21971
+void printWGraphList(975,22894
+bool setTwoSided(1033,24382
+
+automata.cpp,195
+namespace automata 12,179
+namespace automata 44,1577
+ExplicitAutomaton::ExplicitAutomaton(automata::ExplicitAutomaton::ExplicitAutomaton46,1599
+ExplicitAutomaton::~ExplicitAutomaton(57,1902
+
+memory.h,774
+#define MEMORY_H9,189
+union memory::Align 43,830
+  Ulong d_ulong;memory::Align::d_ulong44,852
+  void *d_voidptr;memory::Align::d_voidptr45,869
+class memory::FixArena 48,892
+ public:memory::FixArena::public49,917
+class memory::Arena 52,930
+  struct MemBlock memory::Arena::MemBlock53,952
+    MemBlock *next;memory::Arena::MemBlock::next54,972
+  MemBlock* d_list[memory::Arena::d_list56,997
+  Ulong d_used[memory::Arena::d_used57,1041
+  Ulong d_allocated[memory::Arena::d_allocated58,1081
+  unsigned d_bsBits;memory::Arena::d_bsBits59,1126
+  unsigned d_count;memory::Arena::d_count60,1147
+  void operator delete(memory::Arena::operator delete64,1240
+inline void* operator new(operator new80,1699
+inline void* operator new[](operator new[]82,1783
+
+transducer.h,2697
+#define TRANSDUCER_H9,190
+namespace transducer 33,618
+class transducer::SubQuotient 49,938
+  typedef List<ParNbr> SubSet;transducer::SubQuotient::SubSet52,1009
+  Rank d_rank;transducer::SubQuotient::d_rank54,1052
+  Ulong d_size;transducer::SubQuotient::d_size55,1067
+  CoxGraph& d_graph;transducer::SubQuotient::d_graph56,1083
+  List<ParNbr> d_shift;transducer::SubQuotient::d_shift57,1104
+  List<Length> d_length;transducer::SubQuotient::d_length58,1128
+  ParNbr& shiftref(transducer::SubQuotient::shiftref59,1153
+  Length& lengthref(transducer::SubQuotient::lengthref61,1229
+  void* operator new(transducer::SubQuotient::operator new64,1310
+  void operator delete(transducer::SubQuotient::operator delete65,1374
+class transducer::FiltrationTerm 82,2077
+  SubQuotient *d_X;transducer::FiltrationTerm::d_X83,2112
+  FiltrationTerm *d_next;transducer::FiltrationTerm::d_next84,2132
+  List<CoxWord> d_np;transducer::FiltrationTerm::d_np85,2158
+  void operator delete(transducer::FiltrationTerm::operator delete89,2236
+  FiltrationTerm(transducer::FiltrationTerm::FiltrationTerm91,2325
+class transducer::Transducer 108,3248
+  List<FiltrationTerm> d_filtration;transducer::Transducer::d_filtration110,3289
+  void* operator new(transducer::Transducer::operator new113,3370
+  void operator delete(transducer::Transducer::operator delete114,3434
+  FiltrationTerm* transducer(transducer::Transducer::transducer119,3582
+namespace transducer 126,3814
+inline Length SubQuotient::length(transducer::SubQuotient::length130,3857
+inline Rank SubQuotient::rank(transducer::SubQuotient::rank131,3936
+inline ParNbr SubQuotient::shift(transducer::SubQuotient::shift132,3991
+inline Ulong SubQuotient::size(transducer::SubQuotient::size134,4099
+inline ParNbr FiltrationTerm::extend(transducer::FiltrationTerm::extend138,4178
+inline void FiltrationTerm::fill(transducer::FiltrationTerm::fill140,4282
+inline CoxLetter FiltrationTerm::firstDescent transducer::FiltrationTerm::firstDescent142,4373
+inline Length FiltrationTerm::length(transducer::FiltrationTerm::length144,4477
+inline FiltrationTerm* FiltrationTerm::next(transducer::FiltrationTerm::next146,4565
+inline const CoxWord& FiltrationTerm::np(transducer::FiltrationTerm::np147,4634
+inline Rank FiltrationTerm::rank(transducer::FiltrationTerm::rank149,4719
+inline CoxWord& FiltrationTerm::reduced(transducer::FiltrationTerm::reduced150,4782
+inline ParNbr FiltrationTerm::shift(transducer::FiltrationTerm::shift152,4880
+inline Ulong FiltrationTerm::size(transducer::FiltrationTerm::size154,4987
+inline const FiltrationTerm* Transducer::transducer(transducer::Transducer::transducer158,5070
+
+posets.h,233
+#define POSETS_H9,189
+  typedef Ulong PosetElt;20,378
+class Poset 39,697
+  List<BitMap> d_closure;40,711
+  void operator delete(43,781
+  Poset(45,875
+  Poset(46,886
+  Poset(47,911
+  ~Poset(48,944
+  void findMaximals(51,991
+
+klsupport.cpp,645
+namespace klsupport 71,2739
+KLSupport::KLSupport(klsupport::KLSupport::KLSupport73,2762
+KLSupport::~KLSupport(92,3180
+CoxNbr KLSupport::inverseMin(110,3466
+void KLSupport::standardPath(123,3640
+void KLSupport::allocExtrRow(153,4216
+void KLSupport::allocRowComputation(180,4784
+void KLSupport::applyInverse(254,6296
+CoxNbr KLSupport::extendContext(275,6750
+void KLSupport::permute(359,8535
+void KLSupport::revertSize(432,10130
+namespace klsupport 462,10891
+KLCoeff& safeAdd(klsupport::safeAdd464,10914
+SKLCoeff& safeAdd(481,11217
+KLCoeff& safeMultiply(506,11788
+SKLCoeff& safeMultiply(526,12123
+KLCoeff& safeSubtract(558,12750
+
+memory.cpp,612
+namespace memory 13,194
+  const Ulong MEMORY_MAX ::MEMORY_MAX19,281
+  const Ulong ABYTES ::ABYTES20,319
+  const Ulong ARENA_BITS ::ARENA_BITS21,357
+namespace memory 50,1842
+Arena& arena(memory::arena52,1862
+namespace memory 67,2127
+Arena::Arena(memory::Arena::Arena69,2147
+Arena::~Arena(79,2360
+void Arena::newBlock(87,2456
+void* Arena::alloc(165,4472
+Ulong Arena::allocSize(202,5123
+Ulong Arena::byteSize(217,5425
+void *memory::Arena::realloc(memory::Arena::realloc232,5758
+void Arena::free(257,6355
+void Arena::print(284,6894
+namespace memory 307,7391
+void pause(memory::pause309,7411
+
+io.h,371
+#define IO_H9,175
+  struct Default{Default24,397
+  struct GAP 25,417
+  struct LaTeX 26,434
+  struct Pretty 27,453
+  struct Terse 28,473
+  struct TeX 29,492
+namespace io 34,594
+class String:String80,2191
+    String(85,2282
+    String(86,2312
+    String(87,2374
+    String(88,2434
+    ~String(90,2530
+    void setLength(92,2561
+    bool isDefined(94,2650
+
+schubert.cpp,2574
+namespace schubert 12,178
+  const char* undef_str ::undef_str92,3341
+namespace schubert 143,5296
+StandardSchubertContext::StandardSchubertContext(schubert::StandardSchubertContext::StandardSchubertContext147,5398
+StandardSchubertContext::~StandardSchubertContext(183,6513
+CoxWord& StandardSchubertContext::append(220,7573
+CoxNbr StandardSchubertContext::contextNumber(242,8060
+void StandardSchubertContext::extractClosure(262,8437
+bool StandardSchubertContext::inOrder(287,8900
+CoxNbr StandardSchubertContext::maximize(316,9522
+CoxNbr StandardSchubertContext::minimize(341,10054
+CoxWord& StandardSchubertContext::normalForm(364,10502
+LFlags StandardSchubertContext::twoDescent(389,11118
+CoxNbr StandardSchubertContext::extendContext(411,11606
+void StandardSchubertContext::extendSubSet(470,13043
+void StandardSchubertContext::permute(499,13737
+void StandardSchubertContext::revertSize(599,16277
+void StandardSchubertContext::setSize(625,17115
+String& StandardSchubertContext::append(664,18031
+String& StandardSchubertContext::append(676,18223
+void StandardSchubertContext::print(689,18487
+void StandardSchubertContext::print(700,18688
+void StandardSchubertContext::fillCoatoms(734,19822
+void StandardSchubertContext::fillDihedralShifts(773,20586
+void StandardSchubertContext::fillShifts(851,22477
+void StandardSchubertContext::fillStar(917,24127
+void StandardSchubertContext::fullExtension(1012,27045
+namespace schubert 1127,29954
+StandardSchubertContext::ContextExtension::ContextExtensionschubert::StandardSchubertContext::ContextExtension::ContextExtension1129,29976
+StandardSchubertContext::ContextExtension::~ContextExtension(1206,31706
+namespace schubert 1260,33526
+ClosureIterator::ClosureIterator(schubert::ClosureIterator::ClosureIterator1262,33548
+void ClosureIterator::operator++(1274,33836
+void ClosureIterator::update(1340,35782
+namespace schubert 1392,37249
+void extractInvolutions(schubert::extractInvolutions1394,37271
+void maximize(1428,38019
+void minimize(1447,38330
+bool shortLexOrder(1466,38644
+namespace schubert 1521,40195
+void print(schubert::print1523,40217
+void printBitMap(1601,42149
+void printPartition(1627,42629
+void printPartition(1655,43213
+namespace schubert 1704,44602
+void betti(schubert::betti1706,44624
+Ulong min(1731,45095
+void extractMaximals(1753,45474
+void extractMaximals(1785,46221
+Ulong minDescent(1814,46693
+void readBitMap(1838,47218
+void resetOne(::resetOne1859,47508
+namespace schubert 1878,47741
+void setBitMap(schubert::setBitMap1880,47763
+Ulong sum(1894,47989
+
+fcoxgroup.h,3001
+#define FCOXGROUP_H20,795
+  typedef CoxNbr DenseArray;42,1295
+class FiniteCoxGroup 56,1607
+  CoxArr d_longest_coxarr;60,1662
+  CoxWord d_longest_coxword;61,1689
+  Length d_maxlength;62,1718
+  CoxSize d_order;63,1740
+  Transducer *d_transducer;d_transducer64,1759
+  Partition d_lcell;65,1787
+  Partition d_rcell;66,1808
+  Partition d_lrcell;67,1829
+  Partition d_luneqcell;68,1851
+  Partition d_runeqcell;69,1876
+  Partition d_lruneqcell;70,1901
+  Partition d_ldescent;71,1927
+  Partition d_rdescent;72,1951
+  Partition d_ltau;73,1975
+  Partition d_rtau;74,1995
+  Partition d_lstring;75,2015
+  Partition d_rstring;76,2038
+  List<CoxNbr> d_duflo;77,2061
+  void* operator new(83,2116
+  void operator delete(84,2180
+  FiniteCoxGroup(87,2270
+  virtual ~FiniteCoxGroup(88,2318
+  bool isFullContext(92,2367
+  const CoxArr& assign(108,3030
+class FiniteBigRankCoxGroup 145,4218
+  void* operator new(148,4316
+  void operator delete(149,4380
+  FiniteBigRankCoxGroup(151,4476
+  virtual ~FiniteBigRankCoxGroup(152,4531
+ class GeneralFBRCoxGroup 157,4666
+  void* operator new(GeneralFBRCoxGroup::operator new160,4787
+  void operator delete(GeneralFBRCoxGroup::operator delete161,4851
+class FiniteMedRankCoxGroup 167,5025
+  void* operator new(FiniteMedRankCoxGroup::operator new170,5123
+  void operator delete(FiniteMedRankCoxGroup::operator delete171,5187
+ class GeneralFMRCoxGroup 179,5473
+  void* operator new(GeneralFMRCoxGroup::operator new182,5594
+  void operator delete(GeneralFMRCoxGroup::operator delete183,5658
+class FiniteSmallRankCoxGroup 189,5832
+  void* operator new(FiniteSmallRankCoxGroup::operator new192,5939
+  void operator delete(FiniteSmallRankCoxGroup::operator delete193,6003
+ class GeneralFSRCoxGroup 201,6295
+  void* operator new(GeneralFSRCoxGroup::operator new204,6418
+  void operator delete(GeneralFSRCoxGroup::operator delete205,6482
+class SmallCoxGroup 211,6656
+  void* operator new(SmallCoxGroup::operator new214,6755
+  void operator delete(SmallCoxGroup::operator delete215,6819
+ class GeneralSCoxGroup 228,7329
+  void* operator new(GeneralSCoxGroup::operator new231,7440
+  void operator delete(GeneralSCoxGroup::operator delete232,7504
+namespace fcoxgroup 242,7754
+inline const CoxArr& FiniteCoxGroup::assign(fcoxgroup::FiniteCoxGroup::assign244,7777
+inline void FiniteCoxGroup::fullContext(fcoxgroup::FiniteCoxGroup::fullContext246,7905
+inline const CoxArr& FiniteCoxGroup::longest_coxarr(fcoxgroup::FiniteCoxGroup::longest_coxarr248,7986
+inline const CoxWord& FiniteCoxGroup::longest_coxword(fcoxgroup::FiniteCoxGroup::longest_coxword250,8075
+inline Length FiniteCoxGroup::maxLength(fcoxgroup::FiniteCoxGroup::maxLength252,8167
+inline CoxSize FiniteCoxGroup::order(fcoxgroup::FiniteCoxGroup::order253,8237
+inline const CoxArr& FiniteCoxGroup::setZero(fcoxgroup::FiniteCoxGroup::setZero254,8300
+inline const FiltrationTerm* FiniteCoxGroup::transducer(fcoxgroup::FiniteCoxGroup::transducer256,8411
+
+dotval.h,330
+#define DOTVAL_H9,189
+  enum DotVal 12,226
+    undef_dotval 13,242
+    locked 14,265
+    undef_negdot 15,282
+    neg_cos 16,305
+    neg_cos2 17,323
+    neg_half 18,342
+    neg_hinvgold 19,361
+    zero 20,384
+    hinvgold 21,398
+    half 22,416
+    cos2 23,430
+    cos 24,444
+    undef_posdot 25,457
+    one 26,479
+
+type.cpp,395
+  const char* affinetypes ::affinetypes13,187
+  const char *finitetypes ::finitetypes14,225
+namespace type 25,508
+Type::Type(type::Type::Type27,526
+Type::Type(type::Type::Type35,612
+Type::~Type(type::Type::~Type43,696
+namespace type 68,1390
+bool isAffineType(type::isAffineType70,1408
+bool isFiniteType(85,1782
+bool isTypeA(104,2297
+bool isTypeB(115,2466
+bool isTypeD(126,2635
+
+kl.cpp,4774
+namespace kl 13,188
+namespace kl 75,3586
+  struct KLContext::KLHelper kl::KLContext::KLHelper77,3602
+    KLContext* d_kl;kl::KLContext::KLHelper::d_kl79,3644
+    void* operator new(kl::KLContext::KLHelper::operator new81,3700
+    void operator delete(kl::KLContext::KLHelper::operator delete82,3766
+    KLHelper(kl::KLContext::KLHelper::KLHelper84,3853
+    ~KLHelper(kl::KLContext::KLHelper::~KLHelper85,3894
+    void allocExtrRow(kl::KLContext::KLHelper::allocExtrRow87,3937
+    const ExtrRow& extrList(kl::KLContext::KLHelper::extrList99,4520
+    CoxNbr inverse(kl::KLContext::KLHelper::inverse105,4851
+    bool isExtrAllocated(kl::KLContext::KLHelper::isExtrAllocated107,4960
+    bool isKLAllocated(kl::KLContext::KLHelper::isKLAllocated109,5050
+    bool isMuAllocated(kl::KLContext::KLHelper::isMuAllocated110,5123
+    KLRow& klList(kl::KLContext::KLHelper::klList111,5196
+    const KLPol& klPol(kl::KLContext::KLHelper::klPol112,5260
+    KLSupport& klsupport(kl::KLContext::KLHelper::klsupport114,5350
+    BinaryTree<KLPol>& klTree(kl::KLContext::KLHelper::klTree115,5408
+    Generator last(kl::KLContext::KLHelper::last116,5465
+    KLCoeff mu(kl::KLContext::KLHelper::mu118,5568
+    MuRow& muList(kl::KLContext::KLHelper::muList122,5818
+    Rank rank(kl::KLContext::KLHelper::rank124,5940
+    const SchubertContext& schubert(kl::KLContext::KLHelper::schubert127,6095
+    Ulong size(kl::KLContext::KLHelper::size129,6222
+    KLStatus& status(kl::KLContext::KLHelper::status130,6262
+  struct PolPtrF ::PolPtrF140,6468
+    typedef const KLPol* valueType;::PolPtrF::valueType141,6487
+    const KLPol* operator()(::PolPtrF::operator()142,6523
+namespace kl 197,8597
+KLContext::KLContext(kl::KLContext::KLContext199,8613
+KLContext::~KLContext(219,9066
+void KLContext::applyInverse(240,9511
+void KLContext::fillKL(253,9751
+void KLContext::fillMu(276,10110
+const KLPol& KLContext::klPol(313,10701
+KLCoeff KLContext::mu(366,11769
+void KLContext::permute(419,12875
+void KLContext::revertSize(499,15399
+void KLContext::row(515,15779
+void KLContext::setSize(555,16651
+void KLContext::printStatus(589,17252
+void KLContext::compareMu(611,17964
+namespace kl 709,21866
+void KLContext::KLHelper::allocKLRow(kl::KLContext::KLHelper::allocKLRow711,21882
+void KLContext::KLHelper::allocMuRow(743,22614
+  typedef FilteredIterator<CoxNbr,ExtrRow::ConstIterator,MuFilter> EI;754,22981
+  typedef FilteredIterator<Ulong,BitMap::Iterator,MuFilter> BI;755,23052
+void KLContext::KLHelper::allocMuRow(801,24014
+void KLContext::KLHelper::allocMuTable(852,25059
+  typedef FilteredIterator<Ulong,BitMap::Iterator,MuFilter> I;867,25548
+void KLContext::KLHelper::allocRowComputation(926,26662
+bool KLContext::KLHelper::checkKLRow(981,28278
+bool KLContext::KLHelper::checkMuRow(1007,28724
+void KLContext::KLHelper::coatomCorrection(1027,29092
+void KLContext::KLHelper::coatomCorrection(1070,30020
+KLCoeff KLContext::KLHelper::computeMu(1114,31120
+const KLPol* KLContext::KLHelper::fillKLPol(1244,34351
+void KLContext::KLHelper::fillKLRow(1358,36813
+void KLContext::KLHelper::fillMuRow(1472,40371
+void KLContext::KLHelper::initWorkspace(1494,40875
+void KLContext::KLHelper::inverseMuRow(1531,41558
+void KLContext::KLHelper::makeMuRow(1581,42680
+void KLContext::KLHelper::muCorrection(1605,43675
+void KLContext::KLHelper::muCorrection(1653,44749
+void KLContext::KLHelper::prepareRow(1734,46427
+void KLContext::KLHelper::readMuRow(1803,47746
+KLCoeff KLContext::KLHelper::recursiveMu(1882,49290
+void KLContext::KLHelper::secondTerm(2041,52648
+void KLContext::KLHelper::writeKLRow(2092,53871
+void KLContext::KLHelper::writeMuRow(2132,54858
+namespace kl 2185,56018
+MuFilter::MuFilter(kl::MuFilter::MuFilter2187,56034
+MuFilter::MuFilter(kl::MuFilter::MuFilter2192,56119
+MuFilter::~MuFilter(2199,56220
+namespace kl 2216,56581
+KLStatus::KLStatus(kl::KLStatus::KLStatus2218,56597
+KLStatus::~KLStatus(kl::KLStatus::~KLStatus2224,56715
+namespace kl 2245,57355
+void print(kl::print2247,57371
+void printMuTable(2264,57654
+void showKLPol(2300,58554
+void showMu(2525,63552
+void showRecursiveMu(::showRecursiveMu2606,65120
+void showSimpleMu(2784,69332
+namespace kl 2922,73160
+void genericSingularities(kl::genericSingularities2924,73176
+bool isSingular(2961,74031
+bool isSingular(2983,74628
+namespace kl 3020,75748
+void ihBetti(kl::ihBetti3022,75764
+namespace kl 3075,77269
+void cBasis(kl::cBasis3077,77285
+void allocExtrRow(::allocExtrRow3125,78650
+void appendStar(3150,79041
+MuData* find(3168,79379
+namespace kl 3193,79804
+const KLPol& one(kl::one3195,79820
+void printStar(::printStar3206,79914
+KLPol& safeAdd(3224,80257
+KLPol& safeSubtract(3246,80686
+KLPol& zeroPol(3273,81238
+
+general.h,1336
+#define GENERAL_H9,191
+class GeneralCoxGroup 35,723
+  void* operator new(38,809
+  void operator delete(39,873
+  GeneralCoxGroup(42,964
+  virtual ~GeneralCoxGroup(43,1013
+  virtual CoxSize order(45,1059
+class BigRankCoxGroup 48,1142
+  void* operator new(51,1235
+  void operator delete(52,1299
+  BigRankCoxGroup(54,1389
+  virtual ~BigRankCoxGroup(55,1438
+ class GeneralBRCoxGroup:GeneralBRCoxGroup58,1472
+  void* operator new(GeneralBRCoxGroup::operator new61,1583
+  void operator delete(GeneralBRCoxGroup::operator delete62,1647
+class MedRankCoxGroup 68,1818
+  void* operator new(MedRankCoxGroup::operator new71,1911
+  void operator delete(MedRankCoxGroup::operator delete72,1975
+ class GeneralMRCoxGroup:GeneralMRCoxGroup78,2148
+  void* operator new(GeneralMRCoxGroup::operator new81,2259
+  void operator delete(GeneralMRCoxGroup::operator delete82,2323
+class SmallRankCoxGroup 88,2494
+  void* operator new(SmallRankCoxGroup::operator new91,2589
+  void operator delete(SmallRankCoxGroup::operator delete92,2653
+ class GeneralSRCoxGroup:GeneralSRCoxGroup98,2832
+  void* operator new(GeneralSRCoxGroup::operator new101,2945
+  void operator delete(GeneralSRCoxGroup::operator delete102,3009
+namespace general 112,3265
+inline CoxSize GeneralCoxGroup::order(general::GeneralCoxGroup::order114,3286
+
+help.h,21
+#define HELP_H9,186
+
+schubert.h,5914
+#define SCHUBERT_H9,193
+  typedef List<CoxNbr> CoatomList;28,543
+  typedef List<BettiNbr> Homology;29,578
+struct NFCompare 84,2425
+  const SchubertContext& p;85,2444
+  const Permutation& order;86,2472
+  NFCompare(87,2500
+  ~NFCompare(89,2617
+  bool operator(90,2636
+class SchubertContext 94,2732
+  void* operator new(SchubertContext::operator new97,2797
+  void operator delete(SchubertContext::operator delete98,2861
+  virtual ~SchubertContext(SchubertContext::~SchubertContext100,2951
+class StandardSchubertContext:StandardSchubertContext156,5736
+  class ContextExtension StandardSchubertContext::ContextExtension159,5833
+    StandardSchubertContext& d_schubert;StandardSchubertContext::ContextExtension::d_schubert161,5871
+    Ulong d_size;StandardSchubertContext::ContextExtension::d_size162,5912
+    CoxNbr* d_shift;StandardSchubertContext::ContextExtension::d_shift163,5930
+    CoxNbr* d_star;StandardSchubertContext::ContextExtension::d_star164,5951
+    void* operator new(StandardSchubertContext::ContextExtension::operator new166,5981
+    void operator delete(StandardSchubertContext::ContextExtension::operator delete167,6047
+    Ulong size(StandardSchubertContext::ContextExtension::size171,6233
+  const CoxGraph& d_graph;StandardSchubertContext::d_graph173,6272
+  Rank d_rank;StandardSchubertContext::d_rank174,6299
+  Length d_maxlength;StandardSchubertContext::d_maxlength175,6314
+  CoxNbr d_size;StandardSchubertContext::d_size176,6336
+  List<Length> d_length;StandardSchubertContext::d_length177,6353
+  List<CoatomList> d_hasse;StandardSchubertContext::d_hasse178,6378
+  List<LFlags> d_descent;StandardSchubertContext::d_descent179,6406
+  List<CoxNbr*> d_shift;StandardSchubertContext::d_shift180,6432
+  List<CoxNbr*> d_star;StandardSchubertContext::d_star181,6457
+  BitMap* d_downset;StandardSchubertContext::d_downset182,6481
+  BitMap* d_parity;StandardSchubertContext::d_parity183,6502
+  SubSet d_subset;StandardSchubertContext::d_subset184,6522
+  Stack<ContextExtension*> d_history;StandardSchubertContext::d_history185,6541
+  void* operator new(StandardSchubertContext::operator new194,6955
+  void operator delete(StandardSchubertContext::operator delete195,7019
+class ClosureIterator 258,10744
+  const SchubertContext& d_schubert;ClosureIterator::d_schubert260,10778
+  SubSet d_subSet;ClosureIterator::d_subSet261,10815
+  CoxWord d_g;ClosureIterator::d_g262,10834
+  List<Ulong> d_subSize;ClosureIterator::d_subSize263,10849
+  BitMap d_visited;ClosureIterator::d_visited264,10874
+  CoxNbr d_current;ClosureIterator::d_current265,10894
+  bool d_valid;ClosureIterator::d_valid266,10914
+  ~ClosureIterator(ClosureIterator::~ClosureIterator272,11095
+namespace schubert 285,11505
+  inline LFlags StandardSchubertContext::ascent(schubert::StandardSchubertContext::ascent286,11526
+  inline LFlags StandardSchubertContext::descent(schubert::StandardSchubertContext::descent288,11645
+  inline const BitMap& StandardSchubertContext::downset(schubert::StandardSchubertContext::downset290,11744
+  inline Generator StandardSchubertContext::firstDescent(schubert::StandardSchubertContext::firstDescent292,11854
+  inline Generator StandardSchubertContext::firstLDescent(schubert::StandardSchubertContext::firstLDescent294,11969
+  inline Generator StandardSchubertContext::firstRDescent(schubert::StandardSchubertContext::firstRDescent296,12087
+  inline Generator StandardSchubertContext::firstDescent(schubert::StandardSchubertContext::firstDescent298,12205
+  inline Generator StandardSchubertContext::firstLDescent(schubert::StandardSchubertContext::firstLDescent300,12348
+  inline Generator StandardSchubertContext::firstRDescent(schubert::StandardSchubertContext::firstRDescent302,12499
+  inline const CoatomList& StandardSchubertContext::hasse(schubert::StandardSchubertContext::hasse304,12650
+  inline bool StandardSchubertContext::isDescent(schubert::StandardSchubertContext::isDescent306,12757
+  inline LFlags StandardSchubertContext::lascent(schubert::StandardSchubertContext::lascent309,12894
+  inline LFlags StandardSchubertContext::ldescent(schubert::StandardSchubertContext::ldescent311,13011
+  inline Length StandardSchubertContext::length(schubert::StandardSchubertContext::length313,13121
+  inline CoxNbr StandardSchubertContext::lshift(schubert::StandardSchubertContext::lshift315,13218
+  inline Length StandardSchubertContext::maxlength(schubert::StandardSchubertContext::maxlength318,13355
+  inline Ulong StandardSchubertContext::nStarOps(schubert::StandardSchubertContext::nStarOps320,13441
+  inline const BitMap& StandardSchubertContext::parity(schubert::StandardSchubertContext::parity322,13537
+  inline Rank StandardSchubertContext::rank(schubert::StandardSchubertContext::rank324,13654
+  inline LFlags StandardSchubertContext::rascent(schubert::StandardSchubertContext::rascent325,13723
+  inline LFlags StandardSchubertContext::rdescent(schubert::StandardSchubertContext::rdescent327,13840
+  inline CoxNbr StandardSchubertContext::rshift(schubert::StandardSchubertContext::rshift329,13960
+  inline LFlags StandardSchubertContext::S(schubert::StandardSchubertContext::S332,14090
+  inline CoxNbr StandardSchubertContext::shift(schubert::StandardSchubertContext::shift333,14169
+  inline CoxNbr StandardSchubertContext::size(schubert::StandardSchubertContext::size336,14297
+  inline CoxNbr StandardSchubertContext::star(schubert::StandardSchubertContext::star337,14368
+  inline const Type& StandardSchubertContext::type(schubert::StandardSchubertContext::type340,14484
+  inline const SubSet& ClosureIterator::operator()(schubert::ClosureIterator::operator()343,14574
+  inline ClosureIterator::operator bool(schubert::ClosureIterator::operator bool344,14652
+  inline const CoxNbr& ClosureIterator::current(schubert::ClosureIterator::current345,14718
+
+fcoxgroup.cpp,3573
+#define undefined 12,180
+namespace fcoxgroup 14,224
+  class Workspace ::Workspace23,347
+    List<ParNbr> d_ica_arr;::Workspace::d_ica_arr24,367
+    List<ParNbr> d_nfca_arr;::Workspace::d_nfca_arr25,395
+    List<ParNbr> d_prca_arr;::Workspace::d_prca_arr26,424
+    List<ParNbr> d_rdcw_arr;::Workspace::d_rdcw_arr27,453
+    ParNbr *ica_arr(::Workspace::ica_arr31,536
+    ParNbr *nfca_arr(::Workspace::nfca_arr32,584
+    ParNbr *prca_arr(::Workspace::prca_arr33,634
+    ParNbr *rdcw_arr(::Workspace::rdcw_arr34,684
+Workspace::Workspace(::Workspace::Workspace72,1972
+void Workspace::setSize(::Workspace::setSize80,2066
+inline Workspace& workspace(91,2215
+namespace fcoxgroup 135,3827
+FiniteCoxGroup::FiniteCoxGroup(fcoxgroup::FiniteCoxGroup::FiniteCoxGroup139,3930
+FiniteCoxGroup::~FiniteCoxGroup(171,4646
+bool FiniteCoxGroup::isFullContext(187,4988
+const CoxArr& FiniteCoxGroup::assign(207,5415
+const CoxArr& FiniteCoxGroup::inverseArr(224,5700
+Length FiniteCoxGroup::length(253,6238
+const CoxArr& FiniteCoxGroup::powerArr(271,6524
+int FiniteCoxGroup::prodArr(309,7243
+int FiniteCoxGroup::prodArr(332,7712
+int FiniteCoxGroup::prodArr(357,8151
+LFlags FiniteCoxGroup::rDescent(373,8383
+const CoxWord& FiniteCoxGroup::reducedArr(404,8949
+void FiniteCoxGroup::modify(429,9542
+bool FiniteCoxGroup::parseModifier(455,10097
+const List<CoxNbr>& FiniteCoxGroup::duflo(484,10715
+const Partition& FiniteCoxGroup::lCell(552,12417
+const Partition& FiniteCoxGroup::lrCell(575,12876
+const Partition& FiniteCoxGroup::lrUneqCell(604,13367
+const Partition& FiniteCoxGroup::lUneqCell(636,13862
+const Partition& FiniteCoxGroup::rCell(659,14395
+const Partition& FiniteCoxGroup::rUneqCell(701,15324
+const Partition& FiniteCoxGroup::lDescent(743,16163
+const Partition& FiniteCoxGroup::rDescent(777,16876
+const Partition& FiniteCoxGroup::lString(811,17590
+const Partition& FiniteCoxGroup::rString(845,18504
+const Partition& FiniteCoxGroup::lTau(871,18960
+const Partition& FiniteCoxGroup::rTau(897,19607
+namespace fcoxgroup 936,20395
+FiniteBigRankCoxGroup::FiniteBigRankCoxGroup(fcoxgroup::FiniteBigRankCoxGroup::FiniteBigRankCoxGroup938,20418
+FiniteBigRankCoxGroup::~FiniteBigRankCoxGroup(fcoxgroup::FiniteBigRankCoxGroup::~FiniteBigRankCoxGroup947,20569
+GeneralFBRCoxGroup::GeneralFBRCoxGroup(fcoxgroup::GeneralFBRCoxGroup::GeneralFBRCoxGroup956,20714
+GeneralFBRCoxGroup::~GeneralFBRCoxGroup(fcoxgroup::GeneralFBRCoxGroup::~GeneralFBRCoxGroup961,20818
+FiniteMedRankCoxGroup::FiniteMedRankCoxGroup(fcoxgroup::FiniteMedRankCoxGroup::FiniteMedRankCoxGroup969,20946
+FiniteMedRankCoxGroup::~FiniteMedRankCoxGroup(984,21186
+GeneralFMRCoxGroup::GeneralFMRCoxGroup(993,21367
+GeneralFMRCoxGroup::~GeneralFMRCoxGroup(998,21471
+FiniteSmallRankCoxGroup::FiniteSmallRankCoxGroup(1006,21599
+FiniteSmallRankCoxGroup::~FiniteSmallRankCoxGroup(1015,21763
+GeneralFSRCoxGroup::GeneralFSRCoxGroup(1024,21914
+GeneralFSRCoxGroup::~GeneralFSRCoxGroup(1029,22020
+SmallCoxGroup::SmallCoxGroup(1039,22228
+SmallCoxGroup::~SmallCoxGroup(1044,22324
+GeneralSCoxGroup::GeneralSCoxGroup(1053,22455
+GeneralSCoxGroup::~GeneralSCoxGroup(1058,22547
+const CoxArr& SmallCoxGroup::assign(1066,22671
+void SmallCoxGroup::assign(1085,23016
+bool SmallCoxGroup::parseDenseArray(1100,23248
+bool SmallCoxGroup::parseGroupElement(1139,23999
+int SmallCoxGroup::prodD(1202,25527
+int SmallCoxGroup::prodD(1225,25987
+void fillLongest(::fillLongest1259,26702
+CoxSize order(1274,26938
+bool fcoxgroup::isFiniteType(1315,27941
+Rank fcoxgroup::maxSmallRank(1330,28359
+
+general.cpp,699
+namespace general 24,652
+GeneralCoxGroup::GeneralCoxGroup(general::GeneralCoxGroup::GeneralCoxGroup26,673
+GeneralCoxGroup::~GeneralCoxGroup(38,908
+BigRankCoxGroup::BigRankCoxGroup(47,1037
+BigRankCoxGroup::~BigRankCoxGroup(57,1238
+GeneralBRCoxGroup::GeneralBRCoxGroup(66,1367
+GeneralBRCoxGroup::~GeneralBRCoxGroup(71,1463
+MedRankCoxGroup::MedRankCoxGroup(80,1610
+MedRankCoxGroup::~MedRankCoxGroup(99,1944
+GeneralMRCoxGroup::GeneralMRCoxGroup(108,2137
+GeneralMRCoxGroup::~GeneralMRCoxGroup(113,2233
+SmallRankCoxGroup::SmallRankCoxGroup(122,2380
+SmallRankCoxGroup::~SmallRankCoxGroup(135,2659
+GeneralSRCoxGroup::GeneralSRCoxGroup(144,2794
+GeneralSRCoxGroup::~GeneralSRCoxGroup(149,2892
+
+minroots.h,964
+#define MINROOTS_H9,186
+  typedef unsigned MinNbr;21,401
+  typedef char DotProduct;22,428
+namespace minroots 28,494
+class minroots::MinTable 71,1600
+  Rank d_rank;minroots::MinTable::d_rank73,1639
+  MinNbr d_size;minroots::MinTable::d_size74,1654
+  List<MinNbr*> d_min;minroots::MinTable::d_min75,1671
+  List<DotProduct*> d_dot;minroots::MinTable::d_dot76,1694
+  void* operator new(minroots::MinTable::operator new79,1765
+  void operator delete(minroots::MinTable::operator delete80,1829
+  void* operator new(minroots::MinTable::operator new82,1912
+  void operator delete(minroots::MinTable::operator delete83,1966
+  MinTable(minroots::MinTable::MinTable84,2021
+namespace minroots 112,3337
+inline DotVal MinTable::dot(minroots::MinTable::dot114,3359
+inline MinNbr MinTable::min(minroots::MinTable::min116,3448
+inline Rank MinTable::rank(minroots::MinTable::rank118,3529
+inline MinNbr MinTable::size(minroots::MinTable::size119,3581
+
+wgraph.cpp,551
+namespace wgraph 87,3207
+WGraph::WGraph(wgraph::WGraph::WGraph89,3227
+WGraph::~WGraph(99,3366
+void WGraph::reset(109,3475
+void WGraph::setSize(123,3657
+void WGraph::print(138,3874
+namespace wgraph 223,6200
+OrientedGraph::~OrientedGraph(wgraph::OrientedGraph::~OrientedGraph225,6220
+void OrientedGraph::cells(wgraph::OrientedGraph::cells233,6292
+void OrientedGraph::levelPartition(342,9962
+void OrientedGraph::permute(389,11033
+void OrientedGraph::print(442,12265
+void OrientedGraph::reset(470,12774
+void getClass(::getClass499,13374
+
+io.cpp,755
+namespace io 35,1201
+String::~String(io::String::~String37,1217
+namespace io 72,2486
+String& append(io::append74,2502
+String& append(89,2697
+String& append(103,2880
+String& append(117,3085
+String& append(128,3254
+String& append(139,3423
+String& append(165,3842
+String& append(177,4009
+String& erase(189,4182
+String& pad(206,4446
+String& reset(226,4788
+String& setString(239,4904
+const String& String::undefined(254,5158
+namespace io 287,6133
+void foldLine(io::foldLine289,6149
+void print(350,7438
+void printFile(372,7836
+void printFile(404,8328
+namespace io 444,9038
+char* getInput(io::getInput446,9054
+namespace io 484,9950
+int alphabeticDigits(io::alphabeticDigits486,9966
+int digits(508,10344
+Ulong skipSpaces(523,10517
+
+special.h,25
+#define SPECIAL_H10,191
+
+bits.cpp,2472
+namespace bits 56,1981
+Permutation::Permutation(bits::Permutation::Permutation58,1999
+Permutation::Permutation(bits::Permutation::Permutation62,2045
+Permutation::~Permutation(bits::Permutation::~Permutation66,2106
+Permutation& Permutation::identity(bits::Permutation::identity70,2139
+Permutation& Permutation::inverse(86,2357
+Permutation& Permutation::rightCompose(109,2799
+Permutation& Permutation::compose(130,3173
+namespace bits 182,4547
+BitMap::BitMap(bits::BitMap::BitMap186,4646
+BitMap::~BitMap(198,4890
+Ulong BitMap::bitCount(208,5046
+Ulong BitMap::firstBit(223,5257
+bool BitMap::isEmpty(247,5638
+Ulong BitMap::lastBit(275,6158
+BitMap& BitMap::assign(302,6671
+void BitMap::permute(316,6844
+void BitMap::setSize(347,7430
+void BitMap::operator~ 370,8065
+void BitMap::operator&= BitMap::operator&=386,8332
+void BitMap::operator|= BitMap::operator|=399,8565
+void BitMap::andnot(412,8791
+namespace bits 461,10558
+BitMap::Iterator::Iterator(bits::BitMap::Iterator::Iterator463,10576
+BitMap::Iterator::Iterator(bits::BitMap::Iterator::Iterator467,10610
+BitMap::Iterator::~Iterator(490,11039
+BitMap::Iterator& BitMap::Iterator::operator++ 498,11116
+BitMap::Iterator& BitMap::Iterator::operator-- 530,11785
+BitMap::Iterator BitMap::begin(563,12395
+BitMap::Iterator BitMap::end(575,12519
+namespace bits 631,14116
+Partition::Partition(bits::Partition::Partition633,14134
+Partition::Partition(bits::Partition::Partition637,14162
+Partition::~Partition(643,14253
+void Partition::sort(653,14434
+void Partition::sortI(699,15340
+void Partition::writeClass(744,16184
+void Partition::normalize(764,16557
+void Partition::normalize(799,17230
+void Partition::permute(831,17762
+void Partition::permuteRange(859,18241
+void Partition::setClassCount(872,18452
+void Partition::printClassSizes(893,18762
+namespace bits 934,19735
+PartitionIterator::PartitionIterator(bits::PartitionIterator::PartitionIterator936,19753
+PartitionIterator::~PartitionIterator(966,20191
+void PartitionIterator::operator++ 974,20277
+namespace bits 1030,21879
+SubSet::~SubSet(bits::SubSet::~SubSet1032,21897
+void SubSet::add(bits::SubSet::add1040,21986
+void SubSet::readBitMap(1062,22473
+void SubSet::reset(1081,22753
+unsigned bits::bitCount(1107,23221
+void bits::memSet(1135,23841
+namespace bits 1176,24724
+String& append(bits::append1178,24742
+void print(1196,25037
+namespace bits 1224,25546
+bool isRefinement(bits::isRefinement1226,25564
+
+list.hpp,1143
+namespace list 12,167
+namespace list 59,1712
+template <class T> List<T>::List(list::List61,1730
+template <class T> List<T>::List(List76,2068
+template <class T> List<T>::List(List92,2417
+List<T>::List(List109,2904
+List<T>::List(List125,3218
+template<class T> List<T>::~List(~List140,3531
+template<class T> bool List<T>::operator== operator==158,3929
+template<class T> bool List<T>::operator< operator<178,4353
+const List<T>& List<T>::operator= operator=208,4985
+template <class T> void List<T>::append(append215,5073
+template <class T> const List<T>& List<T>::assign(assign252,5918
+template <class T> void List<T>::erase(erase272,6420
+template <class T> void List<T>::reverse(reverse283,6619
+template <class T> void List<T>::setSize(setSize299,6864
+void List<T>::setData(setData326,7514
+template <class T> void List<T>::sort(sort364,8522
+template<class T> template<class C> void List<T>::sort(sort394,9021
+namespace list 439,10080
+template <class T> Ulong insert(list::insert441,10098
+template <class T> Ulong find(484,11208
+namespace list 519,11895
+template <class T> void print(list::print521,11913
+
+wgraph.h,1786
+#define WGRAPH_H9,189
+  typedef Ulong Vertex;25,460
+  typedef unsigned short 26,484
+  typedef List<Coeff> CoeffList;27,516
+  typedef Vertex Edge;28,549
+  typedef List<Edge> EdgeList;29,572
+class wgraph::OrientedGraph 42,805
+  List<EdgeList> d_edge;wgraph::OrientedGraph::d_edge44,845
+  void* operator new(wgraph::OrientedGraph::operator new47,914
+  void operator delete(wgraph::OrientedGraph::operator delete48,978
+  OrientedGraph(wgraph::OrientedGraph::OrientedGraph50,1066
+class wgraph::WGraph 66,1713
+  OrientedGraph* d_graph;wgraph::WGraph::d_graph68,1746
+  List<CoeffList> d_coeff;wgraph::WGraph::d_coeff69,1772
+  List<LFlags> d_descent;wgraph::WGraph::d_descent70,1799
+  void* operator new(wgraph::WGraph::operator new73,1869
+  void operator delete(wgraph::WGraph::operator delete74,1933
+namespace wgraph 95,2917
+  inline const CoeffList& WGraph::coeffList(wgraph::WGraph::coeffList97,2937
+  inline const LFlags& WGraph::descent(wgraph::WGraph::descent99,3029
+  inline const EdgeList& WGraph::edge(wgraph::WGraph::edge101,3119
+  inline const OrientedGraph& WGraph::graph(wgraph::WGraph::graph103,3211
+  inline CoeffList& WGraph::coeffList(wgraph::WGraph::coeffList104,3282
+  inline EdgeList& WGraph::edge(wgraph::WGraph::edge105,3358
+  inline Ulong WGraph::size(wgraph::WGraph::size106,3434
+  inline OrientedGraph& WGraph::graph(wgraph::WGraph::graph107,3496
+  inline LFlags& WGraph::descent(wgraph::WGraph::descent109,3556
+  inline const EdgeList& OrientedGraph::edge(wgraph::OrientedGraph::edge110,3629
+  inline Ulong OrientedGraph::size(wgraph::OrientedGraph::size112,3721
+  inline EdgeList& OrientedGraph::edge(wgraph::OrientedGraph::edge113,3788
+  inline void OrientedGraph::setSize(wgraph::OrientedGraph::setSize114,3864
+
+uneqkl.cpp,3829
+namespace uneqkl 11,179
+namespace uneqkl 24,519
+  struct KLContext::KLHelper uneqkl::KLContext::KLHelper26,539
+    KLContext* d_kl;uneqkl::KLContext::KLHelper::d_kl28,581
+    void* operator new(uneqkl::KLContext::KLHelper::operator new30,637
+    void operator delete(uneqkl::KLContext::KLHelper::operator delete31,703
+    KLHelper(uneqkl::KLContext::KLHelper::KLHelper33,790
+    ~KLHelper(uneqkl::KLContext::KLHelper::~KLHelper34,831
+    void allocExtrRow(uneqkl::KLContext::KLHelper::allocExtrRow36,874
+    const ExtrRow& extrList(uneqkl::KLContext::KLHelper::extrList43,1245
+    const KLPol& find(uneqkl::KLContext::KLHelper::find49,1641
+    Ulong genL(uneqkl::KLContext::KLHelper::genL50,1715
+    CoxNbr inverse(uneqkl::KLContext::KLHelper::inverse52,1853
+    bool isExtrAllocated(uneqkl::KLContext::KLHelper::isExtrAllocated54,1968
+    bool isKLAllocated(uneqkl::KLContext::KLHelper::isKLAllocated56,2058
+    KLRow& klList(uneqkl::KLContext::KLHelper::klList57,2131
+    const KLPol& klPol(uneqkl::KLContext::KLHelper::klPol58,2197
+    KLSupport& klsupport(uneqkl::KLContext::KLHelper::klsupport60,2287
+    BinaryTree<KLPol>& klTree(uneqkl::KLContext::KLHelper::klTree61,2345
+    Generator last(uneqkl::KLContext::KLHelper::last62,2402
+    Ulong length(uneqkl::KLContext::KLHelper::length63,2468
+    const MuPol& mu(uneqkl::KLContext::KLHelper::mu64,2528
+    MuRow& muList(uneqkl::KLContext::KLHelper::muList69,2832
+    MuTable& muTable(uneqkl::KLContext::KLHelper::muTable71,2931
+    BinaryTree<MuPol>& muTree(uneqkl::KLContext::KLHelper::muTree72,3004
+    Rank rank(uneqkl::KLContext::KLHelper::rank74,3130
+    const SchubertContext& schubert(uneqkl::KLContext::KLHelper::schubert75,3169
+    Ulong size(uneqkl::KLContext::KLHelper::size77,3316
+    KLStatus& status(uneqkl::KLContext::KLHelper::status78,3356
+namespace uneqkl 209,9191
+KLContext::KLContext(uneqkl::KLContext::KLContext211,9211
+KLContext::~KLContext(262,10470
+void KLContext::applyInverse(282,10921
+void KLContext::fillKL(297,11172
+void KLContext::fillMu(314,11417
+void KLContext::fillMu(327,11574
+const KLPol& KLContext::klPol(344,11867
+const MuPol& KLContext::mu(390,12789
+void KLContext::permute(424,13432
+void KLContext::revertSize(493,14936
+void KLContext::row(515,15423
+void KLContext::setSize(562,16471
+namespace uneqkl 634,18401
+void KLContext::KLHelper::allocKLRow(uneqkl::KLContext::KLHelper::allocKLRow636,18421
+void KLContext::KLHelper::allocMuRow(662,18950
+void KLContext::KLHelper::allocMuRow(683,19473
+bool KLContext::KLHelper::checkKLRow(710,20091
+bool KLContext::KLHelper::checkMuRow(734,20533
+void KLContext::KLHelper::ensureKLRow(757,20954
+const KLPol* KLContext::KLHelper::fillKLPol(780,21302
+void KLContext::KLHelper::fillKLRow(875,23357
+const MuPol* KLContext::KLHelper::fillMu(938,24642
+void KLContext::KLHelper::fillMuRow(1010,26569
+void KLContext::KLHelper::initWorkspace(1122,29778
+void KLContext::KLHelper::inverseMin(1159,30574
+void KLContext::KLHelper::muCorrection(1178,30870
+void KLContext::KLHelper::muCorrection(1233,32419
+void KLContext::KLHelper::prepareRowComputation(1287,33677
+void KLContext::KLHelper::secondTerm(1344,34761
+void KLContext::KLHelper::writeKLRow(1385,35772
+void KLContext::KLHelper::writeMuRow(1418,36564
+namespace uneqkl 1476,38049
+KLPol& KLPol::add(uneqkl::KLPol::add1478,38069
+KLPol& KLPol::subtract(1508,38774
+namespace uneqkl 1573,40592
+void cBasis(uneqkl::cBasis1575,40612
+namespace uneqkl 1617,41673
+const MuPol& errorMuPol(uneqkl::errorMuPol1619,41693
+const KLPol& errorPol(1627,41830
+const KLPol& one(1635,41965
+void muSubtraction(::muSubtraction1646,42059
+ void positivePart(1688,43017
+const MuPol* writeMu(1720,43513
+namespace uneqkl 1746,43904
+const MuPol& zero(uneqkl::zero1748,43924
+
+directories.h,58
+#define DIRECTORIES_H9,200
+namespace directories 26,795
+
+coxtypes.cpp,505
+namespace coxtypes 28,824
+CoxWord::CoxWord(coxtypes::CoxWord::CoxWord30,846
+CoxWord::~CoxWord(36,918
+CoxWord& CoxWord::append(40,943
+CoxWord& CoxWord::append(55,1196
+CoxWord& CoxWord::erase(70,1570
+CoxWord& CoxWord::insert(87,1950
+CoxWord& CoxWord::reset(105,2371
+CoxWord& CoxWord::setSubWord(118,2494
+namespace coxtypes 141,3192
+bool operator== coxtypes::operator==143,3214
+bool operator< 161,3475
+namespace coxtypes 199,4326
+String& append(coxtypes::append201,4348
+void print(214,4619
+
+cells.h,22
+#define CELLS_H9,187
+
+search.hpp,541
+namespace search 10,154
+namespace search 47,1170
+template <class T> BinaryTree<T>::BinaryTree(search::BinaryTree49,1190
+template <class T> BinaryTree<T>::~BinaryTree(search::~BinaryTree54,1266
+template <class T> T* BinaryTree<T>::find(find64,1397
+namespace search 109,2412
+template <class T> TreeNode<T>::TreeNode(search::TreeNode111,2432
+template <class T> TreeNode<T>::~TreeNode(search::~TreeNode115,2498
+namespace search 134,2910
+template <class T> void print(search::print136,2930
+template <class T> void print(149,3129
+
+graph.cpp,1739
+namespace graph 68,2408
+CoxGraph::CoxGraph(graph::CoxGraph::CoxGraph70,2427
+CoxGraph::~CoxGraph(97,2897
+LFlags CoxGraph::component(105,2966
+LFlags CoxGraph::extremities(127,3330
+LFlags CoxGraph::nodes(150,3743
+void fillCoxAMatrix(::fillCoxAMatrix227,5740
+void fillCoxBMatrix(239,5894
+void fillCoxDMatrix(254,6073
+void fillCoxEMatrix(274,6315
+void fillCoxFMatrix(297,6594
+void fillCoxGMatrix(313,6784
+void fillCoxHMatrix(322,6859
+void fillCoxIMatrix(337,7038
+void fillCoxaMatrix(354,7205
+void fillCoxbMatrix(376,7465
+void fillCoxcMatrix(399,7779
+void fillCoxdMatrix(417,8013
+void fillCoxeMatrix(435,8249
+void fillCoxfMatrix(481,8946
+void fillCoxgMatrix(497,9136
+void fillCoxXMatrix(508,9237
+void fillCoxYMatrix(575,10787
+void makeCoxMatrix(603,11443
+void makeStar(683,12928
+void makeStarOps(703,13355
+namespace graph 762,14697
+bool isAffine(graph::isAffine764,14716
+bool isConnected(783,15086
+bool isCrystallographic(802,15346
+bool isFinite(829,15788
+bool isLoop(851,16202
+bool isSimplyLaced(874,16608
+bool isTree(896,17030
+const Type& irrType(::irrType928,17614
+namespace graph 1196,23347
+const Type& type(graph::type1198,23366
+CoxSize A_order(::A_order1260,25136
+CoxSize B_order(1281,25463
+CoxSize D_order(1302,25784
+CoxSize dihedralOrder(1322,26110
+ParSize extrQuotOrder(1346,26491
+CoxSize finiteOrder(1462,28391
+ParSize lastQuotOrder(1513,29639
+namespace graph 1559,30537
+CoxSize order(graph::order1561,30556
+ParSize quotOrder(1594,31150
+Ulong gcd(::gcd1695,33435
+namespace graph 1720,33718
+void getConjugacyClasses(graph::getConjugacyClasses1722,33737
+Generator lastGenerator(::lastGenerator1766,34723
+CoxEntry maxCoefficient(1919,37458
+CoxEntry minCoefficient(1949,37948
+
+special.cpp,149
+  const char* special_tag ::special_tag21,373
+void special::addSpecialCommands(34,700
+void special_f(::special_f70,1957
+void special_h(81,2105
+
+klsupport.h,776
+#define KLSUPPORT_H9,195
+  typedef unsigned short 29,563
+  typedef short SKLCoeff;30,597
+  typedef List<CoxNbr> ExtrRow;31,623
+  enum PolynomialType 37,762
+  enum PolynomialType {KLPOL,KLPOL37,762
+  enum PolynomialType {KLPOL, UNEQ_KLPOL,37,762
+  enum PolynomialType {KLPOL, UNEQ_KLPOL, INV_KLPOL,37,762
+  enum PolynomialType {KLPOL, UNEQ_KLPOL, INV_KLPOL, NUM_POLTYPES}NUM_POLTYPES37,762
+class KLSupport 67,1688
+  SchubertContext* d_schubert;69,1716
+  List<ExtrRow*> d_extrList;70,1747
+  List<CoxNbr> d_inverse;71,1776
+  List<Generator> d_last;72,1802
+  BitMap d_involution;73,1828
+  List<ExtrRow*>& extrList(75,1860
+  void* operator new(77,1963
+  void operator delete(78,2027
+  KLSupport(80,2111
+  ~KLSupport(81,2144
+  const ExtrRow& extrList(83,2176
+
+constants.h,75
+#define CONSTANTS_H9,195
+#define BITS(18,311
+namespace constants 20,374
+
+dictionary.h,511
+#define DICTIONARY_H9,197
+template <class T> struct DictCell 44,881
+  T *ptr;ptr45,918
+  DictCell *left;left46,928
+  DictCell *right;right47,946
+  char letter;48,965
+  bool fullname;49,980
+  bool uniquePrefix;50,997
+  void* operator new(52,1053
+  void operator delete(53,1117
+  DictCell(55,1200
+  DictCell(56,1238
+  ~DictCell(58,1389
+  T* value(60,1420
+template <class T> class Dictionary 63,1457
+  DictCell<T>* d_root;Dictionary::d_root66,1508
+  DictCell<T>* root(Dictionary::root77,1814
+
+search.h,670
+#define SEARCH_H9,189
+template <class T> struct TreeNode 41,864
+  TreeNode* left;42,901
+  TreeNode* right;43,919
+  T data;44,938
+  void* operator new(46,983
+  void operator delete(47,1047
+  TreeNode(49,1130
+  ~TreeNode(50,1154
+template <class T> class BinaryTree 53,1173
+  Ulong d_size;BinaryTree::d_size55,1223
+  TreeNode<T>* d_root;BinaryTree::d_root56,1239
+  void* operator new(BinaryTree::operator new59,1306
+  void operator delete(BinaryTree::operator delete60,1370
+namespace search 75,1690
+template <class T> inline Ulong BinaryTree<T>::size(search::size77,1710
+template <class T> inline TreeNode<T>* BinaryTree<T>::root(search::root79,1790
+
+coxtypes.h,698
+#define COXTYPES_H15,426
+  typedef unsigned short 35,703
+  typedef Ulong CoxSize;36,734
+  typedef Ulong BettiNbr;37,802
+  typedef unsigned CoxNbr;38,870
+  typedef CoxNbr ParSize;39,937
+  typedef unsigned short 40,1005
+  typedef ParNbr *CoxArr;CoxArr41,1071
+  typedef unsigned char 42,1097
+  typedef CoxLetter Generator;43,1165
+  typedef unsigned short 44,1243
+  typedef Ulong StarOp;45,1276
+namespace coxtypes 82,2806
+class CoxWord 100,3289
+  List<CoxLetter> d_list;102,3315
+  void operator delete(105,3369
+  CoxWord(107,3451
+  CoxWord(108,3495
+  ~CoxWord(109,3522
+  const CoxLetter& operator[operator111,3552
+  inline CoxWord& CoxWord::operator=(CoxWord::operator=140,4594
+
+coxgroup.h,5633
+#define COXGROUP_H56,1773
+class coxgroup::CoxGroup 89,2418
+  CoxGraph* d_graph;coxgroup::CoxGroup::d_graph93,2494
+  MinTable* d_mintable;coxgroup::CoxGroup::d_mintable94,2515
+  KLSupport* d_klsupport;coxgroup::CoxGroup::d_klsupport95,2539
+  kl::KLContext* d_kl;coxgroup::CoxGroup::d_kl96,2565
+  invkl::KLContext* d_invkl;coxgroup::CoxGroup::d_invkl97,2588
+  uneqkl::KLContext* d_uneqkl;coxgroup::CoxGroup::d_uneqkl98,2617
+  Interface* d_interface;coxgroup::CoxGroup::d_interface99,2648
+  OutputTraits* d_outputTraits;coxgroup::CoxGroup::d_outputTraits100,2674
+  CoxHelper* d_help;coxgroup::CoxGroup::d_help103,2760
+  void* operator new(coxgroup::CoxGroup::operator new108,2819
+  void operator delete(coxgroup::CoxGroup::operator delete109,2883
+namespace coxgroup 264,10673
+inline CoxGraph& CoxGroup::graph(coxgroup::CoxGroup::graph268,10712
+inline MinTable& CoxGroup::mintable(coxgroup::CoxGroup::mintable269,10766
+inline KLSupport& CoxGroup::klsupport(coxgroup::CoxGroup::klsupport270,10826
+inline kl::KLContext& CoxGroup::kl(coxgroup::CoxGroup::kl271,10889
+inline invkl::KLContext& CoxGroup::invkl(coxgroup::CoxGroup::invkl272,10956
+inline uneqkl::KLContext& CoxGroup::uneqkl(coxgroup::CoxGroup::uneqkl273,11033
+inline Interface& CoxGroup::interface(coxgroup::CoxGroup::interface275,11117
+inline OutputTraits& CoxGroup::outputTraits(coxgroup::CoxGroup::outputTraits276,11180
+inline const CoxGraph& CoxGroup::graph(coxgroup::CoxGroup::graph278,11253
+inline const MinTable& CoxGroup::mintable(coxgroup::CoxGroup::mintable279,11319
+inline const KLSupport& CoxGroup::klsupport(coxgroup::CoxGroup::klsupport280,11391
+inline const kl::KLContext& CoxGroup::kl(coxgroup::CoxGroup::kl281,11466
+inline const uneqkl::KLContext& CoxGroup::uneqkl(coxgroup::CoxGroup::uneqkl282,11531
+inline const SchubertContext& CoxGroup::schubert(coxgroup::CoxGroup::schubert283,11608
+inline const Interface& CoxGroup::interface(coxgroup::CoxGroup::interface285,11701
+inline const OutputTraits& CoxGroup::outputTraits(coxgroup::CoxGroup::outputTraits286,11776
+inline CoxEntry CoxGroup::M(coxgroup::CoxGroup::M289,11864
+inline Rank CoxGroup::rank(coxgroup::CoxGroup::rank291,11951
+inline const Type& CoxGroup::type(coxgroup::CoxGroup::type292,12012
+inline bool CoxGroup::isFullContext(coxgroup::CoxGroup::isFullContext294,12080
+inline int CoxGroup::insert(coxgroup::CoxGroup::insert298,12158
+inline const CoxWord& CoxGroup::inverse(coxgroup::CoxGroup::inverse300,12270
+inline const CoxWord& CoxGroup::normalForm(coxgroup::CoxGroup::normalForm302,12361
+inline const CoxWord& CoxGroup::power(coxgroup::CoxGroup::power305,12480
+inline int CoxGroup::prod(coxgroup::CoxGroup::prod307,12585
+inline int CoxGroup::prod(coxgroup::CoxGroup::prod309,12681
+inline const CoxWord& CoxGroup::reduced(coxgroup::CoxGroup::reduced311,12778
+inline LFlags CoxGroup::descent(coxgroup::CoxGroup::descent314,12884
+inline LFlags CoxGroup::ldescent(coxgroup::CoxGroup::ldescent316,12973
+inline LFlags CoxGroup::rdescent(coxgroup::CoxGroup::rdescent318,13064
+inline CoxNbr CoxGroup::contextNumber(coxgroup::CoxGroup::contextNumber323,13174
+inline CoxNbr CoxGroup::contextSize(coxgroup::CoxGroup::contextSize325,13275
+inline Length CoxGroup::length(coxgroup::CoxGroup::length326,13349
+inline LFlags CoxGroup::descent(coxgroup::CoxGroup::descent329,13439
+inline LFlags CoxGroup::ldescent(coxgroup::CoxGroup::ldescent331,13528
+inline LFlags CoxGroup::rdescent(coxgroup::CoxGroup::rdescent333,13618
+inline CoxNbr CoxGroup::inverse(coxgroup::CoxGroup::inverse336,13709
+inline int CoxGroup::lprod(coxgroup::CoxGroup::lprod338,13799
+inline const List<CoxNbr>& CoxGroup::extrList(coxgroup::CoxGroup::extrList341,13892
+inline const CoatomList& CoxGroup::coatoms(coxgroup::CoxGroup::coatoms346,14017
+inline void CoxGroup::extractClosure(coxgroup::CoxGroup::extractClosure348,14114
+inline bool CoxGroup::inOrder(coxgroup::CoxGroup::inOrder350,14227
+inline bool CoxGroup::inOrder(coxgroup::CoxGroup::inOrder352,14334
+inline bool CoxGroup::inOrder(coxgroup::CoxGroup::inOrder355,14470
+inline const Permutation& CoxGroup::ordering(coxgroup::CoxGroup::ordering360,14593
+inline String& CoxGroup::append(coxgroup::CoxGroup::append363,14680
+inline String& CoxGroup::append(coxgroup::CoxGroup::append365,14796
+inline String& CoxGroup::append(coxgroup::CoxGroup::append367,14913
+inline void CoxGroup::printSymbol(coxgroup::CoxGroup::printSymbol370,15030
+inline void CoxGroup::print(coxgroup::CoxGroup::print372,15158
+inline void CoxGroup::print(coxgroup::CoxGroup::print374,15259
+inline void CoxGroup::printFlags(coxgroup::CoxGroup::printFlags376,15370
+inline void CoxGroup::setInPostfix(coxgroup::CoxGroup::setInPostfix379,15487
+inline void CoxGroup::setInPrefix(coxgroup::CoxGroup::setInPrefix381,15572
+inline void CoxGroup::setInSeparator(coxgroup::CoxGroup::setInSeparator383,15655
+inline void CoxGroup::setInSymbol(coxgroup::CoxGroup::setInSymbol385,15744
+inline void CoxGroup::setOrdering(coxgroup::CoxGroup::setOrdering387,15849
+inline void CoxGroup::setOutPostfix(coxgroup::CoxGroup::setOutPostfix389,15942
+inline void CoxGroup::setOutPrefix(coxgroup::CoxGroup::setOutPrefix391,16029
+inline void CoxGroup::setOutSeparator(coxgroup::CoxGroup::setOutSeparator393,16114
+inline void CoxGroup::setOutSymbol(coxgroup::CoxGroup::setOutSymbol395,16205
+inline void CoxGroup::printHeckeElt(coxgroup::CoxGroup::printHeckeElt399,16332
+namespace coxgroup 406,16538
+template<class C> void CoxGroup::setOutputTraits(coxgroup::CoxGroup::setOutputTraits408,16560
+
+iterator.h,241
+#define ITERATOR_H9,193
+template <class T, class I, class F> class FilteredIterator 36,945
+  I d_i;38,1017
+  I d_max;39,1026
+  const F& d_f;40,1037
+  FilteredIterator(42,1062
+  ~FilteredIterator(48,1209
+  T operator*operator49,1235
+
+hecke.hpp,669
+namespace hecke 10,158
+  template<class P> struct PPtrF ::PPtrF33,999
+    typedef const P* valueType;::PPtrF::valueType34,1034
+    valueType operator() ::PPtrF::operator()35,1066
+namespace hecke 76,2380
+HeckeMonomial<P>::HeckeMonomial(hecke::HeckeMonomial79,2418
+template<class P> HeckeMonomial<P>::~HeckeMonomial(hecke::~HeckeMonomial84,2508
+namespace hecke 113,3426
+void append(hecke::append116,3463
+void appendStar(::appendStar136,3739
+Ulong maxLength(149,4006
+void oneColumnPrint(175,4571
+namespace hecke 202,5142
+void prettyPrint(hecke::prettyPrint205,5179
+void singularStratification(237,5967
+void twoColumnPrint(::twoColumnPrint300,7999
+
+version.h,50
+#define VERSION_H9,192
+namespace version 11,211
+
+type.h,183
+#define TYPE_H9,185
+class Type 42,823
+  String d_name;44,846
+  void operator delete(47,904
+  Type(49,983
+  Type(50,993
+  ~Type(51,1014
+  const char& operator[operator53,1038
+
+help.cpp,2711
+namespace help 14,215
+namespace help 35,904
+void main_help(help::main_help37,922
+void interface_help(49,1134
+namespace interface 61,1368
+void in_help(interface::in_help63,1391
+void out_help(75,1638
+void uneq_help(89,1893
+namespace help 194,6456
+void betti_h(help::betti_h196,6474
+void coatoms_h(203,6551
+void compute_h(210,6632
+void cr_h(217,6713
+void default_h(224,6784
+void descent_h(231,6865
+void duflo_h(238,6946
+void extremals_h(245,7023
+void fullcontext_h(252,7108
+void help_h(259,7197
+void ihbetti_h(266,7272
+void inorder_h(273,7353
+void input_h(280,7434
+void interface_h(287,7511
+void interval_h(298,7709
+void intro_h(305,7792
+void invpol_h(317,8006
+void klbasis_h(324,8085
+void lcorder_h(331,8166
+void lcells_h(338,8247
+void lcwgraphs_h(345,8326
+void lrcorder_h(352,8411
+void lrcells_h(359,8494
+void lrcwgraphs_h(366,8575
+void lrwgraph_h(373,8662
+void lwgraph_h(380,8745
+void matrix_h(387,8826
+void mu_h(394,8905
+void mu0_h(401,8976
+void pol_h(408,9049
+void rwgraph_h(415,9122
+void q_h(422,9203
+void qq_h(434,9395
+void rank_h(441,9466
+void rcorder_h(448,9541
+void rcells_h(455,9622
+void rcwgraphs_h(462,9701
+void schubert_h(469,9786
+void show_h(476,9869
+void showmu_h(483,9944
+void slocus_h(490,10023
+void sstratification_h(497,10102
+void type_h(504,10199
+void uneq_h(511,10274
+namespace uneq 518,10349
+void klbasis_h(uneq::klbasis_h520,10367
+void lcorder_h(527,10453
+void lcells_h(534,10539
+void lrcorder_h(541,10623
+void lrcells_h(548,10711
+void mu_h(555,10797
+void pol_h(562,10873
+void rcells_h(569,10951
+void rcorder_h(576,11035
+namespace interface 585,11125
+void abort_h(interface::abort_h587,11148
+void alphabetic_h(594,11235
+void bourbaki_h(601,11332
+void decimal_h(608,11425
+void gap_h(615,11516
+void default_h(622,11599
+void hexadecimal_h(629,11690
+void in_h 636,11789
+void ordering_h(643,11871
+void out_h(650,11964
+void permutation_h(657,12047
+void terse_h(664,12146
+void in::alphabetic_h(671,12233
+void in::bourbaki_h(678,12337
+void in::decimal_h(685,12437
+void in::default_h(692,12535
+void in::gap_h(699,12633
+void in::hexadecimal_h(706,12723
+void in::permutation_h(713,12829
+void in::postfix_h(720,12935
+void in::prefix_h(727,13033
+void in::separator_h(734,13129
+void in::symbol_h(741,13231
+void in::terse_h(748,13327
+void out::alphabetic_h(755,13421
+void out::bourbaki_h(762,13527
+void out::decimal_h(769,13629
+void out::default_h(776,13729
+void out::gap_h(783,13829
+void out::hexadecimal_h(790,13921
+void out::permutation_h(797,14029
+void out::postfix_h(804,14137
+void out::prefix_h(811,14237
+void out::separator_h(818,14335
+void out::symbol_h(825,14439
+void out::terse_h(832,14537
+
+posets.cpp,310
+namespace posets 58,1784
+Poset::Poset(posets::Poset::Poset60,1804
+Poset::Poset(posets::Poset::Poset64,1824
+Poset::Poset(78,2059
+Poset::~Poset(112,2845
+void Poset::findMaximals(124,3086
+bool Poset::isTriangular(145,3566
+void Poset::hasseDiagram(162,3974
+PosetElt firstMinimal(::firstMinimal196,4786
+
+typeA.h,4261
+#define TYPEA_H17,519
+class TypeACoxGroup:TypeACoxGroup53,1374
+  TypeAInterface* d_typeAInterface;54,1418
+  void* operator new(57,1495
+  void operator delete(58,1559
+  TypeACoxGroup(61,1648
+  virtual ~TypeACoxGroup(62,1680
+  void coxWordToPermutation(64,1721
+class TypeABigRankCoxGroup:TypeABigRankCoxGroup77,2411
+  void* operator new(80,2502
+  void operator delete(81,2566
+  TypeABigRankCoxGroup(84,2662
+  virtual ~TypeABigRankCoxGroup(85,2721
+class GeneralTypeABRCoxGroup:GeneralTypeABRCoxGroup88,2763
+  void* operator new(GeneralTypeABRCoxGroup::operator new91,2877
+  void operator delete(GeneralTypeABRCoxGroup::operator delete92,2941
+  GeneralTypeABRCoxGroup(GeneralTypeABRCoxGroup::GeneralTypeABRCoxGroup95,3039
+  ~GeneralTypeABRCoxGroup(GeneralTypeABRCoxGroup::~GeneralTypeABRCoxGroup96,3107
+class TypeAMedRankCoxGroup:TypeAMedRankCoxGroup99,3143
+  void* operator new(TypeAMedRankCoxGroup::operator new102,3234
+  void operator delete(TypeAMedRankCoxGroup::operator delete103,3298
+class GeneralTypeAMRCoxGroup:GeneralTypeAMRCoxGroup110,3472
+  void* operator new(GeneralTypeAMRCoxGroup::operator new113,3586
+  void operator delete(GeneralTypeAMRCoxGroup::operator delete114,3650
+  GeneralTypeAMRCoxGroup(GeneralTypeAMRCoxGroup::GeneralTypeAMRCoxGroup117,3748
+  ~GeneralTypeAMRCoxGroup(GeneralTypeAMRCoxGroup::~GeneralTypeAMRCoxGroup118,3816
+class TypeASmallRankCoxGroup:TypeASmallRankCoxGroup121,3852
+  void* operator new(TypeASmallRankCoxGroup::operator new124,3952
+  void operator delete(TypeASmallRankCoxGroup::operator delete125,4016
+  TypeASmallRankCoxGroup(TypeASmallRankCoxGroup::TypeASmallRankCoxGroup128,4114
+  virtual ~TypeASmallRankCoxGroup(TypeASmallRankCoxGroup::~TypeASmallRankCoxGroup129,4182
+class GeneralTypeASRCoxGroup:GeneralTypeASRCoxGroup132,4226
+  void* operator new(GeneralTypeASRCoxGroup::operator new135,4342
+  void operator delete(GeneralTypeASRCoxGroup::operator delete136,4406
+  GeneralTypeASRCoxGroup(GeneralTypeASRCoxGroup::GeneralTypeASRCoxGroup139,4504
+  ~GeneralTypeASRCoxGroup(GeneralTypeASRCoxGroup::~GeneralTypeASRCoxGroup140,4574
+class TypeASmallCoxGroup:TypeASmallCoxGroup143,4610
+  void* operator new(TypeASmallCoxGroup::operator new146,4709
+  void operator delete(TypeASmallCoxGroup::operator delete147,4773
+  TypeASmallCoxGroup(TypeASmallCoxGroup::TypeASmallCoxGroup150,4867
+  virtual ~TypeASmallCoxGroup(TypeASmallCoxGroup::~TypeASmallCoxGroup151,4933
+class GeneralTypeASCoxGroup:GeneralTypeASCoxGroup159,5155
+  void* operator new(GeneralTypeASCoxGroup::operator new162,5266
+  void operator delete(GeneralTypeASCoxGroup::operator delete163,5330
+  GeneralTypeASCoxGroup(GeneralTypeASCoxGroup::GeneralTypeASCoxGroup166,5427
+  ~GeneralTypeASCoxGroup(GeneralTypeASCoxGroup::~GeneralTypeASCoxGroup167,5492
+class TypeAInterface:TypeAInterface170,5527
+  Interface* d_pInterface;TypeAInterface::d_pInterface171,5567
+  bool d_hasPermutationInput;TypeAInterface::d_hasPermutationInput172,5594
+  bool d_hasPermutationOutput;TypeAInterface::d_hasPermutationOutput173,5624
+  void* operator new(TypeAInterface::operator new176,5696
+  void operator delete(TypeAInterface::operator delete177,5760
+namespace typeA 200,6624
+inline bool TypeAInterface::hasPermutationInput(typeA::TypeAInterface::hasPermutationInput202,6643
+inline bool TypeAInterface::hasPermutationOutput(typeA::TypeAInterface::hasPermutationOutput204,6734
+inline void TypeAInterface::setPermutationInput(typeA::TypeAInterface::setPermutationInput206,6827
+inline void TypeAInterface::setPermutationOutput(typeA::TypeAInterface::setPermutationOutput208,6914
+inline bool TypeACoxGroup::hasPermutationInput(typeA::TypeACoxGroup::hasPermutationInput211,7004
+inline bool TypeACoxGroup::hasPermutationOutput(typeA::TypeACoxGroup::hasPermutationOutput213,7112
+inline void TypeACoxGroup::setPermutationInput(typeA::TypeACoxGroup::setPermutationInput215,7222
+inline void TypeACoxGroup::setPermutationOutput(typeA::TypeACoxGroup::setPermutationOutput217,7322
+inline const TypeAInterface& TypeACoxGroup::typeAInterface(typeA::TypeACoxGroup::typeAInterface219,7424
+inline TypeAInterface& TypeACoxGroup::typeAInterface(typeA::TypeACoxGroup::typeAInterface221,7521
+
+files.cpp,2863
+namespace files 15,238
+namespace files 70,2273
+OutputTraits::OutputTraits(files::OutputTraits::OutputTraits72,2292
+OutputTraits::OutputTraits(215,6355
+OutputTraits::OutputTraits(357,10544
+OutputTraits::~OutputTraits(499,14857
+namespace files 527,15557
+HeckeTraits::HeckeTraits(files::HeckeTraits::HeckeTraits529,15576
+HeckeTraits::HeckeTraits(files::HeckeTraits::HeckeTraits550,15979
+HeckeTraits::HeckeTraits(files::HeckeTraits::HeckeTraits569,16329
+HeckeTraits::~HeckeTraits(files::HeckeTraits::~HeckeTraits587,16667
+AddHeckeTraits::AddHeckeTraits(files::AddHeckeTraits::AddHeckeTraits591,16700
+AddHeckeTraits::AddHeckeTraits(598,16849
+AddHeckeTraits::AddHeckeTraits(606,17012
+AddHeckeTraits::~AddHeckeTraits(624,17380
+namespace files 647,17906
+PartitionTraits::PartitionTraits(files::PartitionTraits::PartitionTraits649,17925
+PartitionTraits::PartitionTraits(files::PartitionTraits::PartitionTraits662,18171
+PartitionTraits::PartitionTraits(files::PartitionTraits::PartitionTraits675,18412
+PartitionTraits::~PartitionTraits(files::PartitionTraits::~PartitionTraits688,18658
+namespace files 708,19167
+PolynomialTraits::PolynomialTraits(files::PolynomialTraits::PolynomialTraits710,19186
+PolynomialTraits::PolynomialTraits(files::PolynomialTraits::PolynomialTraits732,19595
+PolynomialTraits::PolynomialTraits(files::PolynomialTraits::PolynomialTraits754,20009
+PolynomialTraits::~PolynomialTraits(files::PolynomialTraits::~PolynomialTraits776,20415
+namespace files 797,20911
+PosetTraits::PosetTraits(files::PosetTraits::PosetTraits799,20930
+PosetTraits::PosetTraits(files::PosetTraits::PosetTraits813,21159
+PosetTraits::PosetTraits(files::PosetTraits::PosetTraits827,21385
+PosetTraits::~PosetTraits(files::PosetTraits::~PosetTraits841,21616
+namespace files 862,22100
+WgraphTraits::WgraphTraits(files::WgraphTraits::WgraphTraits864,22119
+WgraphTraits::WgraphTraits(files::WgraphTraits::WgraphTraits885,22527
+WgraphTraits::WgraphTraits(files::WgraphTraits::WgraphTraits905,22899
+WgraphTraits::~WgraphTraits(files::WgraphTraits::~WgraphTraits924,23261
+namespace files 951,24291
+void appendHomology(files::appendHomology953,24310
+void printBetti(983,25045
+void printCellOrder(998,25328
+void printCoatoms(1051,26633
+void printDescents(1074,27093
+void printEltData(1091,27426
+void printHeader(1130,28364
+void printHomology(1152,28840
+void printPartition(1177,29371
+void printWGraph(1218,30428
+namespace files 1294,33035
+void appendModifier(files::appendModifier1296,33054
+void appendSeparator(1313,33432
+void minReps(1328,33737
+void pad(1344,34094
+void printModifier(1375,34786
+void printSeparator(1392,35121
+void sortLists(1407,35424
+void writeClasses(1429,35848
+void makeVersionString(::makeVersionString1451,36182
+void makeTypeString(1468,36490
+Ulong maxLength(::maxLength1486,36771
+
+typeA.cpp,982
+namespace typeA 21,599
+TypeACoxGroup::TypeACoxGroup(typeA::TypeACoxGroup::TypeACoxGroup23,618
+TypeACoxGroup::~TypeACoxGroup(35,848
+bool TypeACoxGroup::parseGroupElement(39,885
+namespace typeA 100,2177
+TypeAMedRankCoxGroup::TypeAMedRankCoxGroup(typeA::TypeAMedRankCoxGroup::TypeAMedRankCoxGroup102,2196
+TypeAMedRankCoxGroup::~TypeAMedRankCoxGroup(112,2365
+bool TypeASmallCoxGroup::parseDenseArray(116,2416
+bool TypeASmallCoxGroup::parseGroupElement(155,3172
+int TypeASmallCoxGroup::prodD(223,4799
+namespace typeA 258,5664
+TypeAInterface::TypeAInterface(typeA::TypeAInterface::TypeAInterface260,5683
+TypeAInterface::~TypeAInterface(269,5912
+String& TypeAInterface::append(275,5976
+bool TypeAInterface::parsePermutation(294,6420
+void TypeAInterface::print(318,6848
+void TypeAInterface::setIn(339,7283
+void TypeAInterface::setOut(356,7530
+namespace typeA 385,8186
+void coxWordToPermutation(typeA::coxWordToPermutation387,8205
+void permutationToCoxWord(415,8803
