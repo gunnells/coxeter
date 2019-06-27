@@ -1,4 +1,4 @@
-# coxeter
+
 
 ## Overview
 
@@ -26,11 +26,16 @@ give it new life.
 
 ## Building the program
 
-Currently I have only built the program using g++ 9.1.0 (some trivial
-changes to du Cloux's original code were necessary to get it to
-compile).  The makefile is original to the project and is fairly
-basic.  Just clone the repo and run 'make'; I don't have much more to
-add, unfortunately.
+Currently I have only built the program on linux with versions of g++:
+
+- using g++ version 9.1.0 
+- using g++ version 7.4.0 (on a stock installation of Ubuntu 18.04)
+
+Some trivial changes to du Cloux's original code were necessary to get
+it to work with these modern compilers.  The makefile is original to
+the project and is fairly basic.  Just clone the repo and run 'make';
+I don't have much more to add, unfortunately.  But if you are able to
+build it on other systems, let me know and I will add it here.
 
 ## Original author information
 
