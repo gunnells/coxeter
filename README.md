@@ -28,6 +28,7 @@ give it new life.
 
 Currently I have only built the program on linux with versions of g++:
 
+- using g++ version 13.3.0
 - using g++ version 9.1.0 
 - using g++ version 7.4.0 (on a stock installation of Ubuntu 18.04)
 
